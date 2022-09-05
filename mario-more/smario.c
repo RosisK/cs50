@@ -8,7 +8,7 @@ int main(void)
     while( i < 3)
     {
         int j = 0;
-        while(j < 3)
+        while(j <= 0)
         {
             printf("#");
             j++;
