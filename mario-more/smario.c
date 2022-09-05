@@ -7,9 +7,13 @@ int main(void)
     int height = get_int("Height: ");
     while( i < 3)
     {
-        int j = 0
-        while(j < )
-        printf("#");
+        int j = 0;
+        while(j < 3)
+        {
+            printf("#");
+            j++;
+        }
+        printf("#\n");
         i++;
 
     }
