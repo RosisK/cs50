@@ -6,10 +6,10 @@ int main(void)
     int i = 0;
     int j = 0;
     int height = get_int("Height: ");
-    while( i < 3)
+    while( i < 5)
     {
 
-        while(j < 2)
+        while(j < 3)
         {
             printf("#");
             j++;
