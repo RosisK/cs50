@@ -1,7 +1,14 @@
 #include <stdio.h>
-#include <cd50.h>
+#include <cs50.h>
 
 int main(void)
 {
-    if 
+    if 1 < 1
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False")
+    }
 }
