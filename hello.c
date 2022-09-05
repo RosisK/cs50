@@ -3,5 +3,7 @@
 int main(void)
 {
     string input = get_string("What is your name ?\n");
+    int number = get_int("")
+    printf("Hello %s\n", input);
 
 }
