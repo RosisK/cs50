@@ -4,11 +4,12 @@
 int main(void)
 {
     int i = 0;
+    int j = 0;
     int height = get_int("Height: ");
     while( i < 3)
     {
-        int j = 0;
-        while(j < 1)
+
+        while(j < 2)
         {
             printf("#");
             j++;
