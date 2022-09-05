@@ -7,6 +7,10 @@ int main(void)
     //int height = get_int("Height:");
     for(int i = 0; i < 3; i++)
     {
+        for(int j = 0; i < 3; j++)
+        {
+            
+        }
         printf("#\n");
     }
 }
