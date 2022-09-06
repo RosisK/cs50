@@ -11,13 +11,11 @@ int main(void)
 
 void hash(int n)
 {
-    int j = 0;
     for (int i = 0; i < n; i++)
     {
-        while (j < 3)
+        for (int j = 0; j < 3; j++)
         {
             printf("#");
-            j++
         }
         printf("#\n");
     }
