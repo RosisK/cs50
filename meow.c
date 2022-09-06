@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <cs50.h>
 
 int main(void)
 {
@@ -7,7 +7,7 @@ int main(void)
     do
     {
         printf("please give me a height between 1-23: ");
-        height = GetInt();
+        height = get_int();
     }
     while (height < 1 || height > 23);
 
