@@ -6,7 +6,7 @@ void hash(int n);
 int main(void)
 {
     int height = get_int("Height: ");
-
+    hash(height);
 }
 
 void hash(int n)
