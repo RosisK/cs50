@@ -7,11 +7,11 @@ int main(void)
 {
     int height = get_int("Height: ");
     hash(height);
-    int j = 0;
 }
 
 void hash(int n)
 {
+    int j = 0;
     for (int i = 0; i < n; i++)
     {
         while (j < 3)
