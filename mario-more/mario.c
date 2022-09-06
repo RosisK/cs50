@@ -17,7 +17,7 @@ void hash(int n)
         while (j < 3)
         {
             printf("#");
-            j++;
+            j++
         }
         printf("#\n");
     }
