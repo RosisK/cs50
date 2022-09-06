@@ -7,15 +7,17 @@ int main(void)
 {
     int height = get_int("Height: ");
     hash(height);
+    int j = 0;
 }
 
 void hash(int n)
 {
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < 3; j++)
+        while (j < 3)
         {
             printf("#");
+            j++;
         }
         printf("#\n");
     }
