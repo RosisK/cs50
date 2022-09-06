@@ -7,7 +7,7 @@ int main(void)
     do
     {
         printf("please give me a height between 1-23: ");
-        height = get_int();
+        height = get_int("Height: ");
     }
     while (height < 1 || height > 23);
 
@@ -16,7 +16,7 @@ int main(void)
 
         for (j = 0; j < height - i - 1; j++)
             printf(" ");
-        for (j = 0; j < i + 2; j++)
+        for (j = 0; j < i + 1; j++)
             printf("#");
 
         printf("\n");
