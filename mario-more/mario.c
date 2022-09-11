@@ -24,5 +24,5 @@ int main(void)
         }
         new++;
         printf("\n");
-        printf(".");
     }
+}
