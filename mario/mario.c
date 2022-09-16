@@ -15,7 +15,7 @@ int main (void)
     while (height < 1 || height > 8);
     for (i = 0; i < height; i++)
     {
-        for (j = 0; j < height - (height - i); j++)
+        for (j = 0; j <= i; j++)
         {
              printf("#");
         }
