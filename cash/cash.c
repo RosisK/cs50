@@ -13,4 +13,5 @@ int main (void)
         }
     }
     while (cash < 0);
+    
 }
