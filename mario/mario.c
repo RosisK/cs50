@@ -16,12 +16,23 @@ int main (void)
 
     for (i = 0; i < height; i++)
     {
-        for (k = 0; k )
+        for (k = 0; k < height - i - 1; k++)
+        {
+            printf(" ");
+        }
         for (j = 0; j <= i; j++)
         {
             printf("#");
 
         }
+        printf("  ");
+        
+         for (j = 0; j <= i; j++)
+        {
+            printf("#");
+
+        }
         printf("\n");
+
     }
 }
