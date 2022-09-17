@@ -3,7 +3,7 @@
 
 int main (void)
 {
-    int height, i , j;
+    int height, i , j, k;
     do
     {
         height = get_int("Height: ");
@@ -16,6 +16,7 @@ int main (void)
 
     for (i = 0; i < height; i++)
     {
+        for (k = 0; k )
         for (j = 0; j <= i; j++)
         {
             printf("#");
