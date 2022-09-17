@@ -3,7 +3,7 @@
 
 int main (void)
 {
-    int height;
+    int height, i , j;
     do
     {
         height = get_int("Height: ");
