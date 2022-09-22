@@ -16,7 +16,7 @@ int main (void)
     while (dollar < 0);
 
     int cents = round (dollar * 100);
-    printf("%i", cents);
+    //printf("%i", cents);
 
     for (int i = 0; i < cents; i++)
     {
@@ -36,7 +36,7 @@ int main (void)
         {
             cents = cents - 1;
         }
-        printf("%i", cents);
+        printf("%i\n", cents);
     }
 
 }
