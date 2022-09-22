@@ -14,7 +14,16 @@ int main (void)
         }
     }
     while (dollar < 0);
-    int cents = round (dollar * 100);
-    int coins = 0;
-    
+
+   // int cents = round (dollar * 100);
+  //  int coins = 0;
+    //for (int i = 0; i > dollar; i++)
+    //{
+      //  if ()
+    //}
+    int maan = 10 % 2;
+    if (maan != 0)
+    {
+        printf("This is valid");
+    }
 }
