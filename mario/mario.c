@@ -9,7 +9,7 @@ int main (void)
         height = get_int("Height: ");
         if (height > 8 || height < 1)
         {
-            printf("Enter Height Between 1 and 8");
+            printf("Enter Height Between 1 and 8\n");
         }
     }
     while (height > 8 || height < 1);
@@ -26,7 +26,7 @@ int main (void)
 
         }
         printf("  ");
-        
+
          for (j = 0; j <= i; j++)
         {
             printf("#");
