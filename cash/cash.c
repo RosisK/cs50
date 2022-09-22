@@ -16,4 +16,5 @@ int main (void)
     while (dollar < 0);
     int cents = round (dollar * 100);
     int coins = 0;
+    
 }
