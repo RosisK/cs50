@@ -21,6 +21,13 @@ int main (void)
     //{
       //  if ()
     //}
-    int maan = 11 % 2;
-    printf("Remainder = %d", maan);
+    int aman = get_int("Enter no.: ");
+    if (aman % 2 == 0)
+    {
+        printf("Even");
+    else
+    {
+        printf("Odd");
+    }
+    }
 }
