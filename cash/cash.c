@@ -22,8 +22,5 @@ int main (void)
       //  if ()
     //}
     int maan = 10 % 2;
-    if (maan != 0)
-    {
-        printf("This is valid");
-    }
+    printf("Remainder = %d", maan)
 }
