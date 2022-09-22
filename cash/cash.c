@@ -21,6 +21,6 @@ int main (void)
     //{
       //  if ()
     //}
-    int maan = 10 % 2;
-    printf("Remainder = %d", maan)
+    int maan = 11 % 2;
+    printf("Remainder = %d", maan);
 }
