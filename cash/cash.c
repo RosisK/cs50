@@ -17,9 +17,25 @@ int main (void)
 
     int cents = round (dollar * 100);
     int coins = 0;
-    for (int i = 0; i > dollar; i++)
+    for (int i = 0; i < cents; i++)
     {
-        if ()
+        if (cents >= 25)
+        {
+            cents = cents - 25;
+        }
+        else if (cents < 25 && cents >= 10)
+        {
+            cents = cents - 10;
+        }
+        else if (cents < 10 && cents >= 5)
+        {
+            cents = cents - 5;
+        }
+        else
+        {
+            cents = cents - 1;
+        }
+        printf("%i", cents);
     }
 
 }
