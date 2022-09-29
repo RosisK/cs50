@@ -3,6 +3,8 @@
 
 int main (void)
 {
+    int card;
     printf("Enter card number: ");
-    scanf(")
+    scanf("%i", &card);
+    
 }
