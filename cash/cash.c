@@ -18,7 +18,7 @@
    //total of numbers located at locations numbered with odd numbers
    int totalOdd = 0;
      //gets input and stores it in well.. input
-     input = get_long("Number: ");
+    input = get_long("Number: ");
 
       // a formula to single out a number, starting with the ones and then as you can see, mod is muliplied by 10 to go over the second number.
 
