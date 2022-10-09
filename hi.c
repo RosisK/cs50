@@ -2,9 +2,7 @@
 
 int main(void)
 {
-    char c1 = 'H';
-    char c2 = 'i';
-    char c3 = '!';
+    char c[3] = "Hi!";
 
-    printf("%c%c%c\n", c1, c2, c3);
+    printf("%c\n", c[3]);
 }
