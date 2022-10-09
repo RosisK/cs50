@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    int n = get_int("How many subjects ?\n");
     int scores[n];
     for (int i = 0; i < n; i++)
     {
