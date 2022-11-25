@@ -2,12 +2,23 @@
 #include <ctype.h>
 #include <stdio.h>
 
+int letter_count (text);
+
 int main(void)
 {
     int i = 0;
     string text = get_string ("Text: ");
 
-    int letter_count (text)
+    
+
+
+
+
+
+
+
+
+    int letter_count (string c)
     {
         while (isalpha(text[i]) || text[i] == '\0')
         {
@@ -20,6 +31,7 @@ int main(void)
                 i++;
             }
         }
+        return i;
     }
 
 }
