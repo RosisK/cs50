@@ -20,7 +20,7 @@ int letter_count (string c)
     {
         if (c[n] == '\0')
         {
-            break;
+            
         }
         else
         {
