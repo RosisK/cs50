@@ -11,28 +11,20 @@ int main(void)
 
     int letter = letter_count (text);
     printf ("%i", letter);
+}
 
-
-
-
-
-
-
-
-    int letter_count (string c)
+int letter_count (string c)
+{
+    while (isalpha(text[i]) || text[i] == '\0')
     {
-        while (isalpha(text[i]) || text[i] == '\0')
+        if (text[i] == '\0')
         {
-            if (text[i] == '\0')
-            {
-                break;
-            }
-            else
-            {
-                i++;
-            }
+            break;
         }
-        return i;
+        else
+        {
+            i++;
+        }
     }
-
+    return i;
 }
