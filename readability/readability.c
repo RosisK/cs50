@@ -7,10 +7,12 @@ int main(void)
     int i = 0;
     string text = get_string ("Text: ");
 
-    while (isalpha(text[i]) || )
+    int letter_count (text)
     {
-        i++;
+        if (text[i] == '\0')
+        {
+            
+        }
     }
-    printf ("%i\n", i);
 
 }
