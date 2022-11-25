@@ -1,2 +1,3 @@
 // prompt user for text
-// find the number of words and store it in a variable
+// initiate a loop to iterate over all letters
+// 
