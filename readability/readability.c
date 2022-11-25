@@ -9,14 +9,16 @@ int main(void)
 
     int letter_count (text)
     {
-        while (True)
+        while (isalpha(text[i]) || text[i] == '\0')
         {
             if (text[i] == '\0')
             {
                 break;
             }
             else
-            
+            {
+                
+            }
         }
     }
 
