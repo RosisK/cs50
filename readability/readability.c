@@ -15,9 +15,9 @@ int main(void)
 
 int letter_count (string c)
 {
-    while (isalpha(text[i]) || text[i] == '\0')
+    while (isalpha(c[i]) || c[i] == '\0')
     {
-        if (text[i] == '\0')
+        if (c[i] == '\0')
         {
             break;
         }
