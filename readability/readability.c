@@ -4,10 +4,13 @@
 
 int main(void)
 {
+    int i = 0;
     string text = get_string ("Text: ");
-    for (int i = 0, n = text[i]; i > n; i++)
+
+    while (isalpha(text[i]) )
     {
-        
+        i++;
     }
+    printf ("%i\n", i);
 
 }
