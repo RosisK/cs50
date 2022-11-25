@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include <stdio.h>
 
-int letter_count (text);
+int letter_count (string c);
 
 int main(void)
 {
