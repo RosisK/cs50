@@ -9,8 +9,13 @@ int main(void)
 
     int letter_count (text)
     {
-        if (text[i] == '\0')
+        while (True)
         {
+            if (text[i] == '\0')
+            {
+                break;
+            }
+            else
             
         }
     }
