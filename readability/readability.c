@@ -10,21 +10,22 @@ int main(void)
     string text = get_string ("Text: ");
 
     int letter = letter_count (text);
-    printf ("%i", letter);
+    printf ("%i\n", letter);
 }
 
 int letter_count (string c)
 {
-    while (isalpha(c[i]) || c[i] == '\0')
+    int n = 0;
+    while (isalpha(c[n]) || c[n] == '\0')
     {
-        if (c[i] == '\0')
+        if (c[n] == '\0')
         {
             break;
         }
         else
         {
-            i++;
+            n++;
         }
     }
-    return i;
+    return n;
 }
