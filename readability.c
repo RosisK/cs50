@@ -2,6 +2,7 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 // declare prototypes
 int letter_count (string c);
@@ -13,14 +14,14 @@ int main (void)
     // prompt user for text
     string text = get_string ("Text: ");
 
-    // count the number of letters and stores it in the variable
+    // count the number of letters and store it in the variable
     int letters = letter_count (text);
 
-    // count the number of words and stores it in the variable
+    // count the number of words and store it in the variable
     int words = word_count (text);
 
+    // count the number of sentences and store it in the variable
     int sent = sentence (text);
-    printf ("%i", sent);
 
 }
 
