@@ -24,14 +24,7 @@ int letter_count (string c)
     //
     while (isalpha(c[n]) || c[n] == '\0')
     {
-        if (c[n] == '\0')
-        {
-            
-        }
-        else
-        {
-            n++;
-        }
+        
     }
     return n;
 }
