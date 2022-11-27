@@ -3,8 +3,9 @@
 #include <stdio.h>
 #include <string.h>
 
-// declaring a prototype
+// declare prototypes
 int letter_count (string c);
+int word_count (string s);
 
 int main (void)
 {
@@ -12,9 +13,12 @@ int main (void)
     string text = get_string ("Text: ");
 
     // count the number of letters and stores it in the variable
-    int letters = letter_count (text);
+   // int letters = letter_count (text);
 
-    
+    // count the number of words and stores it in the variable
+    int words = word_count (text);
+    printf ("%i\n", words);
+
 }
 
 int letter_count (string c)
@@ -35,4 +39,20 @@ int letter_count (string c)
     return n;
 }
 
-int word_count ()
+int word_count (string s)
+{
+    // measure the length of the string
+    int length = strlen(s);
+
+    // word count
+    int n = 0;
+
+    for (int i = 0; i < length; i++)
+    {
+        if (s[i] == '\0')
+        {
+            n++;
+        }
+    }
+    return n;
+}
