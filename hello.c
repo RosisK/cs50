@@ -4,7 +4,7 @@
 
 int main (void)
 {
-    string c = "My name is Rosis Kharel.";
+    string c = "My";
 
     for (int i = 0; i <= strlen(c); i++)
     {
