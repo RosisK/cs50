@@ -23,15 +23,17 @@ int main (void)
     // count the number of sentences and store it in the variable
     int sent = sentence (text);
 
+    // avg number of letters per 100 words
     float L = (letters / words) * 100;
 
+    // avg number of sentences per 100 words
     float S = (sent / words) * 100;
 
-    int index = 0.0588 * L - 0.296 * S - 15.8;
-    printf ("%i\n", letters);
-    printf ("%i\n", words);
-    printf ("%i\n", sent);
-    printf ("%i\n", index);
+    // coleman-lieu equation
+    float index = 0.0588 * L - 0.296 * S - 15.8;
+
+    // print the grade level
+    printf ("%f\n", index);
 }
 
 int letter_count (string c)
