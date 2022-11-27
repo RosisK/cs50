@@ -24,7 +24,10 @@ int main (void)
     int sent = sentence (text);
 
     int index = 0.0588 * letters - 0.296 * sent - 15.8;
-    printf ("%i", index);
+    printf ("%i\n", letters);
+    printf ("%i\n", words);
+    printf ("%i\n", sent);
+    printf ("%i\n", index);
 }
 
 int letter_count (string c)
