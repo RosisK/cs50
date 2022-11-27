@@ -30,10 +30,10 @@ int main (void)
     float S = (sent / words) * 100;
 
     // coleman-lieu equation
-    float index = 0.0588 * L - 0.296 * S - 15.8;
+    int index = 0.0588 * L - 0.296 * S - 15.8;
 
     // print the grade level
-    printf ("%f\n", index);
+    printf ("%i\n", index);
 }
 
 int letter_count (string c)
