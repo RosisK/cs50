@@ -57,4 +57,7 @@ int word_count (string s)
     return m + 1;
 }
 
-int sentence (string )
+int sentence (string t)
+{
+    int length =
+}
