@@ -23,7 +23,7 @@ int main (void)
     // count the number of sentences and store it in the variable
     int sent = sentence (text);
 
-    int index = 0.0588 * letters - 0.296 * sent - 15.8;
+    int index = round( 0.0588 * letters - 0.296 * sent - 15.8);
     printf ("%i\n", letters);
     printf ("%i\n", words);
     printf ("%i\n", sent);
