@@ -6,5 +6,5 @@ int main (void)
 {
     string c = "My name is Rosis Kharel.";
 
-    for (int i = 0; )
+    for (int i = 0, n = c[i]; )
 }
