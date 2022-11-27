@@ -3,10 +3,12 @@
 #include <string.h>
 #include <ctype.h>
 
+int count_letters(string s);
+
 int main (void)
 {
     string text = get_string ("Text: ");
-
+    int letter = count_letters (text);
 }
 
 int count_letters(string s)
