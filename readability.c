@@ -49,7 +49,7 @@ int word_count (string s)
 
     for (int i = 0; i < length; i++)
     {
-        if (s[i] == '\0')
+        if (isspace(s[i]))
         {
             m++;
         }
