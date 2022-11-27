@@ -59,5 +59,6 @@ int word_count (string s)
 
 int sentence (string t)
 {
-    int length =
+    int length = strlen (t);
+    
 }
