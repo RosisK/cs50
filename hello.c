@@ -5,13 +5,20 @@
 
 int main (void)
 {
-    string c = "My";
+    string text = get_string ("Text: ");
 
-    for (int i = 0; i <= strlen(c); i++)
+}
+
+int count_letters(string s)
+{
+    int length = strlen (s);
+
+    for (int i = 0; i < length; i++)
     {
-        if ()
+        if (isalpha(s[i]))
         {
-            printf ("Done!\n");
+            i++;
         }
     }
+    return i;
 }
