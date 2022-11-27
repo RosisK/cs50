@@ -6,6 +6,7 @@
 // declare prototypes
 int letter_count (string c);
 int word_count (string s);
+int sentence (string t);
 
 int main (void)
 {
@@ -13,11 +14,13 @@ int main (void)
     string text = get_string ("Text: ");
 
     // count the number of letters and stores it in the variable
-   // int letters = letter_count (text);
+    int letters = letter_count (text);
 
     // count the number of words and stores it in the variable
     int words = word_count (text);
-    printf ("%i\n", words);
+
+    int sent = sentence (text);
+    printf ("%i", sent);
 
 }
 
@@ -59,6 +62,18 @@ int word_count (string s)
 
 int sentence (string t)
 {
+    // measure the length of the string
     int length = strlen (t);
-    
+
+    // sentence count
+    int p = 0;
+
+    for (int i = 0; i < length; i++)
+    {
+        if (t[i] == '.' || t[i] == '!' || t[i] == '?')
+        {
+            p++;
+        }
+    }
+    return p;
 }
