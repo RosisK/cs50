@@ -6,8 +6,11 @@ int main (void)
 {
     string c = "My name is Rosis Kharel.";
 
-    for (int i = 0, n = c[i]; i <= strlen(c); i++)
+    for (int i = 0; i <= strlen(c); i++)
     {
-        
+        if (c[i] == '\0')
+        {
+            printf ("Done!\n");
+        }
     }
 }
