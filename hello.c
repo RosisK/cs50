@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 #include <string.h>
+#include <ctype.h>
 
 int main (void)
 {
@@ -8,7 +9,7 @@ int main (void)
 
     for (int i = 0; i <= strlen(c); i++)
     {
-        if (c[i] == '\0')
+        if ()
         {
             printf ("Done!\n");
         }
