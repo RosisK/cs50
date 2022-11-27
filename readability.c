@@ -6,9 +6,12 @@
 // declaring a prototype
 int letter_count (string c);
 
-int main(void)
+int main (void)
 {
+    // prompt user for text
     string text = get_string ("Text: ");
+
+    // count the number of letters and stores it in the variable
     int letters = letter_count (text);
 
     
@@ -31,3 +34,5 @@ int letter_count (string c)
     }
     return n;
 }
+
+int word_count ()
