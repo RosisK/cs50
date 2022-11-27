@@ -54,5 +54,5 @@ int word_count (string s)
             m++;
         }
     }
-    return m;
+    return m + 1;
 }
