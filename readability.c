@@ -45,14 +45,14 @@ int word_count (string s)
     int length = strlen(s);
 
     // word count
-    int n = 0;
+    int m = 0;
 
     for (int i = 0; i < length; i++)
     {
         if (s[i] == '\0')
         {
-            n++;
+            m++;
         }
     }
-    return n;
+    return m;
 }
