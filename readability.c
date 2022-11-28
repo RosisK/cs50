@@ -69,6 +69,7 @@ int word_count (string s)
             m++;
         }
     }
+    // because m is the count of no. of spaces and words = spaces + 1
     return m + 1;
 }
 
