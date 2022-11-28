@@ -24,6 +24,7 @@ int main (void)
     int sent = sentence (text);
 
     // avg number of letters per 100 words
+
     float L = (float) letters / (float) words * 100;
 
     // avg number of sentences per 100 words
