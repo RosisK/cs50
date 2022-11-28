@@ -24,10 +24,10 @@ int main (void)
     int sent = sentence (text);
 
     // avg number of letters per 100 words
-    float L = (letters / words) * 100;
+    float L = ((float) letters / words) * 100;
 
     // avg number of sentences per 100 words
-    float S = (sent / words) * 100;
+    float S = ((float) sent / words) * 100;
 
     // coleman-lieu equation
     int index = 0.0588 * L - 0.296 * S - 15.8;
