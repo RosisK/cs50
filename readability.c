@@ -5,23 +5,23 @@
 #include <math.h>
 
 // declare prototypes
-int letter_count (string c);
-int word_count (string s);
-int sentence (string t);
+int letter_count(string c);
+int word_count(string s);
+int sentence(string t);
 
-int main (void)
+int main(void)
 {
     // prompt user for text
-    string text = get_string ("Text: ");
+    string text = get_string("Text: ");
 
     // count the number of letters and store it in the variable
-    int letters = letter_count (text);
+    int letters = letter_count(text);
 
     // count the number of words and store it in the variable
-    int words = word_count (text);
+    int words = word_count(text);
 
     // count the number of sentences and store it in the variable
-    int sent = sentence (text);
+    int sent = sentence(text);
 
     // avg number of letters per 100 words
     float L = (float) letters / (float) words * 100;
@@ -47,7 +47,7 @@ int main (void)
     }
 }
 
-int letter_count (string c)
+int letter_count(string c)
 {
     // length of the text
     int length = strlen(c);
@@ -65,7 +65,7 @@ int letter_count (string c)
     return n;
 }
 
-int word_count (string s)
+int word_count(string s)
 {
     // measure the length of the string
     int length = strlen(s);
@@ -84,7 +84,7 @@ int word_count (string s)
     return m + 1;
 }
 
-int sentence (string t)
+int sentence(string t)
 {
     // measure the length of the string
     int length = strlen (t);
