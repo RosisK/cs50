@@ -24,13 +24,13 @@ int main (void)
     int sent = sentence (text);
 
     // avg number of letters per 100 words
-    float L = ((float) letters / (float) words) * 100;
+    float L = (float) letters / (float) words * 100;
 
     // avg number of sentences per 100 words
-    float S = ((float) sent / (float) words) * 100;
+    float S = (float) sent / (float) words * 100;
 
     // coleman-lieu equation
-    int index = 0.0588 * L - 0.296 * S - 15.8;
+    int index = round (0.0588 * L - 0.296 * S - 15.8);
 
     // print the grade level
     printf ("%i\n", index);
