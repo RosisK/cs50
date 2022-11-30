@@ -4,9 +4,9 @@
 int main(int argc, string argv[])
 {
     string plain = get_string ("Plain Text: ");
-    if (argc > 2 || argc < 2)
+    if (argc > 2 || argc < 2 || arg)
     {
         printf ("Please Enter The Key: ");
     }
-    
+
 }
