@@ -4,7 +4,7 @@
 int main(int argc, string argv[])
 {
     string plain = get_string ("Plain Text: ");
-    if (argc > 2 || argc < 2 || arg)
+    if (argc > 2 || argc < 2 || (int) argv[1] > )
     {
         printf ("Please Enter The Key: ");
     }
