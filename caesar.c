@@ -13,7 +13,7 @@ int main(int argc, string argv[])
     }
     for (int i = 0; i < strlen(argv[1]))
     {
-        if (isdigit(char argv[1[i]]) ==0)
+        if (isdigit(char argv[1[i]]) == '0')
         {
             printf("Usage: ./caesar 'key'\n *The key must only be digits*\n");
         }
