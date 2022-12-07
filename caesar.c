@@ -5,6 +5,6 @@
 int main(int argc, string argv[])
 {
     string plain = get_string ("Plain Text: ");
-    
+    printf("%s", argv[1]);
 
 }
