@@ -4,7 +4,10 @@
 
 int main(int argc, string argv[])
 {
+    if (argc > 2 || argc < 2)
+    {
+        printf("Usage: ./caesar 'key'\n");
+    }
     string plain = get_string ("Plain Text: ");
-    printf("%s", argv[1]);
 
 }
