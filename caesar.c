@@ -12,7 +12,8 @@ int main(int argc, string argv[])
         exit(0);
     }
     int length = strlen(argv[1]);
-    for (int i = 0; i < strlen(argv[1]); i++)
+
+    for (int i = 0; i < length; i++)
     {
         if (isdigit(char argv[1[i]]) == '0')
         {
