@@ -5,7 +5,7 @@
 
 int main(int argc, string argv[])
 {
-    atoi(argv[1]);
+    int atoi(string argv[1]);
     if (argc > 2 || argc < 2)
     {
         printf("Usage: ./caesar 'key'\n");
