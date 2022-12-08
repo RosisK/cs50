@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 
+bool only_digits(string c);
 int conv(string s);
 
 int main(int argc, string argv[])
@@ -13,8 +14,18 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar 'key'\n");
         exit(0);
     }
-    int length = strlen(argv[1]);
 
+    
+
+    int key = conv(argv[1]);
+
+    string plain = get_string ("Plain Text: ");
+
+}
+
+bool only_digits(string c)
+{
+    int length = strlen(argv[1]);
     for (int i = 0; i < length; i++)
     {
         if (!isdigit(argv[1][i]))
@@ -23,11 +34,6 @@ int main(int argc, string argv[])
             exit(0);
         }
     }
-
-    int key = conv(argv[1]);
-
-    string plain = get_string ("Plain Text: ");
-
 }
 
 int conv(string s)
