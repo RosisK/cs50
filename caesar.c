@@ -30,7 +30,10 @@ bool only_digits(string c)
     {
         is_digit = isdigit(c[i]);
     }
-    return is_digit;
+    if (is_digit == '0')
+        return False;
+    else
+        return True;
 }
 
 int conv(string s)
