@@ -28,12 +28,9 @@ bool only_digits(string c)
     int length = strlen(c);
     for (int i = 0; i < length; i++)
     {
-        if (!isdigit(c[i]))
-        {
-            printf("Usage: ./caesar 'key'\n *The key must only be digits*\n");
-            exit(0);
-        }
+       bool is_digit = isdigit(c[i]);
     }
+    return is_digit;
 }
 
 int conv(string s)
