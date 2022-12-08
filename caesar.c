@@ -4,6 +4,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+int conv(string s);
+
 int main(int argc, string argv[])
 {
     if (argc != 2)
@@ -20,16 +22,20 @@ int main(int argc, string argv[])
             printf("Usage: ./caesar 'key'\n *The key must only be digits*\n");
         }
     }
+
+    int key = conv(argv[1]);
+    printf("%i\n", key);
     string plain = get_string ("Plain Text: ");
 
 }
 
 int conv(string s)
 {
+    int c;
     for(int i = 0; i < strlen(s); i++)
     {
         char input = s[i];
-        int converted = input - 48;
-        return converted;
+        c = input - 48;
     }
+    return c;
 }
