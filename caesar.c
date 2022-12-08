@@ -14,8 +14,7 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar 'key'\n");
         exit(0);
     }
-
-
+    if ()
 
     int key = conv(argv[1]);
 
@@ -25,10 +24,11 @@ int main(int argc, string argv[])
 
 bool only_digits(string c)
 {
+     bool is_digit;
     int length = strlen(c);
     for (int i = 0; i < length; i++)
     {
-       bool is_digit = isdigit(c[i]);
+        is_digit = isdigit(c[i]);
     }
     return is_digit;
 }
