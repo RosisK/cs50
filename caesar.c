@@ -6,7 +6,7 @@
 
 int main(int argc, string argv[])
 {
-    if (argc != '0')
+    if (argc != '2')
     {
         printf("Usage: ./caesar 'key'\n");
         exit(0);
@@ -15,7 +15,7 @@ int main(int argc, string argv[])
 
     for (int i = 0; i < length; i++)
     {
-        if (isdigit(argv[1][i]) == '0')
+        if (!isdigit(argv[1][i]))
         {
             printf("Usage: ./caesar 'key'\n *The key must only be digits*\n");
         }
