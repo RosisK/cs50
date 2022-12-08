@@ -17,7 +17,7 @@ int conv(string s)
     for(int i = 0; i < strlen(s); i++)
     {
         char input = s[i];
-        c = (int)input;
+        c = input - 48;
     }
     return c;
 }
