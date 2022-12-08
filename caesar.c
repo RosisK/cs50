@@ -31,9 +31,9 @@ bool only_digits(string c)
         is_digit = isdigit(c[i]);
     }
     if (is_digit == '0')
-        return False;
+        return false;
     else
-        return True;
+        return true;
 }
 
 int conv(string s)
