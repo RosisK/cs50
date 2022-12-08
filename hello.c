@@ -13,10 +13,11 @@ int main(int argc, string argv[])
 
 int conv(string s)
 {
+    int c;
     for(int i = 0; i < strlen(s); i++)
     {
         char input = s[i];
-        int c = input - 48;
-        return c;
+        int c = (int)input;
     }
+    return c;
 }
