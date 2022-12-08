@@ -23,3 +23,8 @@ int main(int argc, string argv[])
     string plain = get_string ("Plain Text: ");
 
 }
+
+int conv(string s)
+{
+    
+}
