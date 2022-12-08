@@ -20,11 +20,12 @@ int main(int argc, string argv[])
         if (!isdigit(argv[1][i]))
         {
             printf("Usage: ./caesar 'key'\n *The key must only be digits*\n");
+            exit(0);
         }
     }
 
     int key = conv(argv[1]);
-    printf("%i\n", key);
+
     string plain = get_string ("Plain Text: ");
 
 }
