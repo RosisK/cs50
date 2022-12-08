@@ -14,7 +14,11 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar 'key'\n");
         exit(0);
     }
-    if ()
+    if (only_digits(argv[1]) == false)
+    {
+        printf("Usage: ./caesar 'key'\n The key must only contain integer\n");
+        exit(0);
+    }
 
     int key = conv(argv[1]);
 
@@ -30,7 +34,7 @@ bool only_digits(string c)
     {
         is_digit = isdigit(c[i]);
     }
-    if (is_digit == '0')
+    if (is_digit == 0)
         return false;
     else
         return true;
