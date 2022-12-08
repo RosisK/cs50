@@ -26,5 +26,10 @@ int main(int argc, string argv[])
 
 int conv(string s)
 {
-    
+    for(int i = 0; i < strlen(s); i++)
+    {
+        char input = s[i];
+        int converted = input - 48;
+        return converted;
+    }
 }

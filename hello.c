@@ -2,13 +2,21 @@
 #include <cs50.h>
 #include <string.h>
 
+int conv(string s);
+
 int main(int argc, string argv[])
 {
-    int length = strlen(argv[1]);
-    for (int i = 0; i < length; i++)
+    int convert = conv(argv[1]);
+    printf("%i\n", convert);
+
+}
+
+int conv(string s)
+{
+    for(int i = 0; i < strlen(s); i++)
     {
-        char letter = argv[1][i];
-        printf("%c", letter);
+        char input = s[i];
+        int converted = input - 48;
+        return converted;
     }
-    printf("\n");
 }
