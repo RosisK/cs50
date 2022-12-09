@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 
+// prototypes 
 bool only_digits(string c);
 int conv(string s);
 
