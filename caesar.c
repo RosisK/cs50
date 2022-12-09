@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-// prototypes 
+// prototypes
 bool only_digits(string c);
 int conv(string s);
 
@@ -27,6 +27,7 @@ int main(int argc, string argv[])
 
 }
 
+// function to determine whether a string has 
 bool only_digits(string c)
 {
      bool is_digit;
