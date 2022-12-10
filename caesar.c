@@ -41,6 +41,10 @@ bool only_digits(string c)
     for (int i = 0; i < length; i++)
     {
         is_digit = isdigit(c[i]);
+        if (is_digit == 0)
+        {
+            break;
+        }
     }
     if (is_digit == 0)
         return false;
