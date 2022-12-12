@@ -7,6 +7,7 @@
 // prototypes
 bool only_digits(string c);
 int conv(string s);
+char rotate(char p, int k, int l);
 
 int main(int argc, string argv[])
 {
@@ -28,7 +29,15 @@ int main(int argc, string argv[])
 
     // prompting user for plain text
     string plain = get_string ("Plain Text: ");
+    int length = strlen(plain);
 
+    printf("Cipher Text: ");
+    for (int i = 0; i < length; i++)
+    {
+        char cipher_char = rotate(plain[i], key, length);
+        printf("%c", cipher_char);
+    }
+    printf("\n");
 }
 
 
@@ -65,3 +74,24 @@ int conv(string s)
     return c;
 }
 
+char rotate(char p, int k, int l)
+{
+    for (int i = 0; i < l; i++)
+    {
+        if (isupper(p))
+        {
+            char cipher = ((p - 65 + k) % 26) + 65;
+            return cipher;
+        }
+        else if (islower(p))
+        {
+            char cipher = ((p - 97 + k) % 26) + 97;
+            return cipher;
+        }
+        else
+        {
+            return p;
+        }
+    }
+    return 0;
+}
