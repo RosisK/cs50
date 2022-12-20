@@ -24,7 +24,7 @@ int main(int argc, string argv[])
     string plain = get_string("Plain Text: ");
 
     printf("Cipher Text: ");
-    int hello = cipher(key, plain);
+    string hello = cipher(key, plain);
 }
 
 int valid_key(string s)
@@ -60,12 +60,12 @@ int valid_key(string s)
     return 0;
 }
 
-int cipher(string c, string p)
+string cipher(string c, string p)
 {
     int length = strlen(c);
     for (int i = 0; i < length; i++)
     {
-        if (islower(s[i]))
+        if (islower(c[i]))
         {
             s[i] = s[i] - 32;
         }
