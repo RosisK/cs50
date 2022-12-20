@@ -19,7 +19,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    else if (only_letters(argv[1]) == 0)
+    else if (only_letters(argv[1]) != 0)
     {
         printf("Usage: ./sus key\nThe key should contain letters only\n");
         return 1;
@@ -30,5 +30,12 @@ int main(int argc, string argv[])
 
 int only_letters(string s)
 {
-    
+    int length = strlen(s);
+
+    for (int i = 0; i < length; i++)
+    {
+        if (!isalpha(s[i]))
+            return 1;
+    }
+    return 0;
 }
