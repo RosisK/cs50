@@ -36,7 +36,10 @@ int valid_key(string s)
     for (int i = 0; i < length; i++)
     {
         if (!isalpha(s[i]))
+        {
+            printf("Usage: ./sus key\nThe key must only contain letters.\n");
             return 1;
+        }
     }
     return 0;
 }
