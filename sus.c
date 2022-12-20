@@ -67,7 +67,7 @@ string cipher(string c, string p)
     {
         if (islower(c[i]))
         {
-            s[i] = s[i] - 32;
+            c[i] = c[i] - 32;
         }
     }
 
