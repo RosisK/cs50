@@ -4,7 +4,7 @@
 #include <string.h>
 
 int valid_key(string s);
-
+string cipher(string c, string p);
 
 int main(int argc, string argv[])
 {
@@ -23,8 +23,9 @@ int main(int argc, string argv[])
 
     string plain = get_string("Plain Text: ");
 
-     printf("Cipher Text: ");
-
+    printf("Cipher Text: ");
+    char cipher = cipher(key, plain);
+    printf("%c", cipher);
 }
 
 int valid_key(string s)
@@ -60,7 +61,7 @@ int valid_key(string s)
     return 0;
 }
 
-string cipher(string c, string p)
+char cipher(string c, string p)
 {
     int length = strlen(c);
     for (int i = 0; i < length; i++)
