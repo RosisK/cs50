@@ -7,33 +7,3 @@
 //      repeated letters are present
 // the case of the letters in the key should not affect anything
 
-#include <stdio.h>
-#include <cs50.h>
-#include <ctype.h>
-#include <string.h>
-
-int only_letters(string s);
-
-int main(void)
-{
-    string input = get_string("Type: ");
-    int is_letter = only_letters(input);
-    if (is_letter == 0)
-        printf("This string doesn't have numbers.\n");
-    else
-        printf("This string has numbers.\n");
-}
-
-int only_letters(string s)
-{
-    int length = strlen(s);
-
-    for (int i = 0; i < length; i++)
-    {
-        if (isdigit(s[i]))
-        {
-            return 1;
-        }
-    }
-    return 0;
-}
