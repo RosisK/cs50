@@ -19,9 +19,9 @@ int main(void)
     string input = get_string("Type: ");
     int is_letter = only_letters(input);
     if (is_letter == 0)
-        printf("This string has only letters\n");
+        printf("This string doesn't have numbers.\n");
     else
-        printf("This string doesn't have only letters\n");
+        printf("This string has numbers.\n");
 }
 
 int only_letters(string s)
@@ -30,7 +30,7 @@ int only_letters(string s)
 
     for (int i = 0; i < length; i++)
     {
-        if (!isalpha(s[i]))
+        if (isdigit(s[i]))
         {
             return 1;
         }
