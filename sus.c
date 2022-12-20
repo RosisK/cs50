@@ -46,7 +46,7 @@ int valid_key(string s)
     {
         for (int j = i + 1; j < length; j++)
         {
-            if (s[i] == s[j])
+            if (toupper(s[i]) == toupper(s[j]))
             {
                 printf("Usage: ./sus\nRepeated letters should not be present in the key\n");
                 return 1;
