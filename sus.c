@@ -41,5 +41,19 @@ int valid_key(string s)
             return 1;
         }
     }
+
+    for (int i = 0; i < length; i++)
+    {
+        for (int j = 1; j < length; j++)
+        {
+            if (s[i] == s[j])
+            {
+                printf("Usage: ./sus\nRepeated letters should not be present in the key\n");
+                return 1;
+            }
+        }
+    }
+
+
     return 0;
 }
