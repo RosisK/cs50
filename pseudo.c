@@ -19,9 +19,10 @@ int main(void)
     string input = get_string("Type: ");
     int is_letter = only_letters(input);
     if (is_letter == 0)
-        printf("This string has only letters");
+        printf("This string has only letters\n");
     else
-        printf("This string doesn't have only letters");
+        printf("This string doesn't have only letters\n");
+}
 
 int only_letters(string s)
 {
