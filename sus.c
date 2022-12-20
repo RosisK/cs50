@@ -70,7 +70,12 @@ string cipher(string c, string p)
         {
             c[i] = toupper(c[i]);
         }
-    }
+        for (int i = 0; i < length; i++)
+        {
+            int letter = p[i] - 65;
+            char cipher = c[letter];
+            printf("%c", cipher);
+        }
 
     for (int i = 0; i < length; i++)
     {
