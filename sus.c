@@ -56,11 +56,11 @@ int valid_key(string s)
     return 0;
 }
 
-char cipher(string c)
+string cipher(string c)
 {
     int length = strlen(c)
     for (int i = 0; i < length; i++)
     {
-        hello
+        char ogchar = c[]
     }
 }
