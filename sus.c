@@ -69,7 +69,8 @@ string cipher(string c, string p)
 
     for (int i = 0; i < length; i++)
     {
-        int letter = plain
+        int letter = p[i] - 65;
+        
     }
 
 }
