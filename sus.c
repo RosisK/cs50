@@ -32,19 +32,9 @@ int only_letters(string s)
 {
     int is_alpha;
     int length = strlen(s);
+
     for (int i = 0; i < length; i++)
     {
-        if (isalpha(s[i]) != 0)
-        {
-            is_alpha = isalpha(s[i]);
-        }
-        else
-        break;
+        if (isalpha)
     }
-    if (is_alpha == 0)
-    {
-        return 1;
-    }
-    else
-    return 1;
 }
