@@ -25,6 +25,7 @@ int main(int argc, string argv[])
 
     printf("Cipher Text: ");
     string hello = cipher(key, plain);
+    printf("\n");
 }
 
 int valid_key(string s)
