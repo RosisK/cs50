@@ -61,6 +61,13 @@ string cipher(string c)
     int length = strlen(c)
     for (int i = 0; i < length; i++)
     {
-        char ogchar = c[]
+        if (islower(s[i]))
+        {
+            s[i] = s[i] - 32;
+        }
     }
+
+    for (int i = 0; i < length; i++)
+    
+
 }
