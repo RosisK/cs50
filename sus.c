@@ -56,7 +56,7 @@ int valid_key(string s)
     return 0;
 }
 
-string cipher(string c)
+string cipher(string c, string p)
 {
     int length = strlen(c);
     for (int i = 0; i < length; i++)
