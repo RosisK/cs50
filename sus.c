@@ -41,9 +41,9 @@ int only_letters(string s)
         else
         break;
     }
-    if (is_alpha != 0)
+    if (is_alpha == 0)
     {
-        return 0;
+        return 1;
     }
     else
     return 1;
