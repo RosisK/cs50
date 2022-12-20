@@ -30,11 +30,5 @@ int main(int argc, string argv[])
 
 int only_letters(string s)
 {
-    int is_alpha;
-    int length = strlen(s);
-
-    for (int i = 0; i < length; i++)
-    {
-        if (isalpha)
-    }
+    
 }
