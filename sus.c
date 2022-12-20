@@ -58,7 +58,7 @@ int valid_key(string s)
 
 string cipher(string c)
 {
-    int length = strlen(c)
+    int length = strlen(c);
     for (int i = 0; i < length; i++)
     {
         if (islower(s[i]))
