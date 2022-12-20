@@ -3,8 +3,8 @@
 
 int main(void)
 {
-    int numbers[] = {4, 7, 8, 9, 2, 1};
-    for (int i = 0; i < sizeof(); i++)
+    int numbers[] = {4, 7, 8, 9, 2, 1, 0};
+    for (int i = 0; i < 7; i++)
     {
         if (numbers[i] == 0)
         {
