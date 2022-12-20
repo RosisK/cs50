@@ -20,7 +20,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    printf("Bruh!!\n");
+    string plain = get_string("Plain Text: ");
 }
 
 int valid_key(string s)
