@@ -13,11 +13,25 @@ int main(int argc, string argv[])
         return 1;
     }
     string key = argv[1];
+
+    int is_valid = valid_key(key);
+    if (is_valid == 1)
+    {
+        return 1;
+    }
+
+    printf("Bruh!!\n");
 }
 
 int valid_key(string s)
 {
     int length = strlen(s);
+
+    if (strlen(s) != 26)
+    {
+        printf("Usage: ./sus\nThe key must contain 26 letters.\n");
+        return 1;
+    }
 
     for (int i = 0; i < length; i++)
     {
