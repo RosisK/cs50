@@ -5,6 +5,7 @@
 
 int valid_key(string s);
 
+
 int main(int argc, string argv[])
 {
     if (argc != 2)
@@ -21,6 +22,9 @@ int main(int argc, string argv[])
     }
 
     string plain = get_string("Plain Text: ");
+
+     printf("Cipher Text: ");
+
 }
 
 int valid_key(string s)
@@ -70,7 +74,8 @@ string cipher(string c, string p)
     for (int i = 0; i < length; i++)
     {
         int letter = p[i] - 65;
-        
+        char cipher = c[letter];
+        return cipher;
     }
-
+    return 0;
 }
