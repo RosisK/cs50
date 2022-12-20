@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <string.h>
 
-int only_letters(string s);
+int valid_key(string s);
 
 int main(int argc, string argv[])
 {
@@ -12,23 +12,10 @@ int main(int argc, string argv[])
         printf("Usage: ./sus key\n");
         return 1;
     }
-
-    else if (strlen(argv[1]) != 26)
-    {
-        printf("Usage: ./sus key\nThe key should be 26 characters long\n");
-        return 1;
-    }
-
-    else if (only_letters(argv[1]) != 0)
-    {
-        printf("Usage: ./sus key\nThe key should contain letters only\n");
-        return 1;
-    }
-
-    printf("Bruh\n");
+    string key = argv[1];
 }
 
-int only_letters(string s)
+int valid_key(string s)
 {
     int length = strlen(s);
 
