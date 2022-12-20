@@ -34,7 +34,7 @@ int only_letters(string s)
     int length = strlen(s);
     for (int i = 0; i < length; i++)
     {
-        if (isalpha(s[i]))
+        if (isalpha(s[i]) != 0)
         {
             is_alpha = isalpha(s[i]);
         }
