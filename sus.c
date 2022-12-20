@@ -44,7 +44,7 @@ int valid_key(string s)
 
     for (int i = 0; i < length; i++)
     {
-        for (int j = 0; j < length; j++)
+        for (int j = i ; j < length; j++)
         {
             if (s[i] == s[j])
             {
