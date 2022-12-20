@@ -69,7 +69,7 @@ string cipher(string c)
 
     for (int i = 0; i < length; i++)
     {
-        
+        int letter = plain
     }
 
 }
