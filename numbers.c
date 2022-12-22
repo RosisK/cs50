@@ -1,18 +1,20 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <string.h>
 
 int main(void)
 {
-    int numbers[] = {4, 7, 8, 9, 2, 1, 0};
+    string name = get_string("Type Name: ");
+    string names[] = {"Danny", "Charlie", "Bill", "Fred", "Ginny", "Percy", "Ron"};
     for (int i = 0; i < 7; i++)
     {
-        if (numbers[i] == 0)
+        if (strcmp(names[i], name) == 0)
         {
-            printf("Number '0' is in array index %i\n", i);
+            printf("Found\n");
             return 0;
         }
     }
-    printf("Number '0' not found\n");
+    printf("Not Found\n");
     return 1;
 
 }
