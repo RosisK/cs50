@@ -21,8 +21,9 @@ person;
 
 int main(void)
 {
-    person one.name = "Rosis";
-    person one.number = "323";
+    person one;
+    one.name = "Rosis";
+    one.number = "323";
 
-    printf("%p", one);
+    printf("%s and %s\n", one.name, one.number);
 }
