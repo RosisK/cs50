@@ -9,18 +9,25 @@ typedef struct
 }
 person;
 
-
 int main(void)
 {
-    string names[] = {"Carter", "David"};
-    string numbers[] = {"33433848", "38492023"};
+    person people[2];
+
+    people[0].name = "Carter";
+    people[0].number = "123";
+
+    people[1].name = "David";
+    people[1].name = "321";
 
     string input = get_string("Who do you want to find: ");
     for (int i = 0; i < 2; i++)
     {
-        if (strcmp(input, names[i]) == 0)
+        if (strcmp(input, people[i].name) == 0)
         {
-            printf("%s\n", numbers[i]);
+            printf("%s\n", people[i].number);
+            return 0;
         }
     }
+    printf("Not Found\n");
+    return 1;
 }
