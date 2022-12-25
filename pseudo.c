@@ -7,3 +7,22 @@
 //      repeated letters are present
 // the case of the letters in the key should not affect anything
 
+
+#include <stdio.h>
+#include <cs50.h>
+#include <string.h>
+
+typedef struct
+{
+    string name;
+    string number;
+}
+person;
+
+int main(void)
+{
+    person one.name = "Rosis";
+    person one.number = "323";
+
+    printf("%p", one);
+}
