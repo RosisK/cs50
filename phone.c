@@ -18,7 +18,7 @@ int main(void)
     people[0].number = "123";
 
     people[1].name = "David";
-    people[1].name = "321";
+    people[1].number = "321";
 
     string input = get_string("Who do you want to find: ");
     for (int i = 0; i < 2; i++)
