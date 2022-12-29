@@ -16,6 +16,7 @@ int voter_count, candidate_count;
 
 int main(int argc, string argv[])
 {
+    candidates[4] = argv[];
     // check for invalid usage
     if (argc < 2)
     {
@@ -49,4 +50,3 @@ bool vote(string name)
     return true;
 }
 
-void print_winner()
