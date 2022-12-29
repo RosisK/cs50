@@ -14,6 +14,7 @@ candidate;
 
 candidate candidates[4];
 int voter_count, candidate_count;
+string candy_name;
 
 int main(int argc, string argv[])
 {
@@ -33,10 +34,10 @@ int main(int argc, string argv[])
 
     for (int i = 0; i < voter_count; i++)
     {
-        candidates[i].name = get_string("Vote: ");
+        candy_name = get_string("Vote: ");
+        bool whowin = vote(candy_name);
     }
 
-    bool whowin = vote(candidates[])
     print_winner();
 }
 
