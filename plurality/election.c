@@ -18,7 +18,7 @@ int main(int argc, string argv[])
 {
     for (int i = 0; i < 5; i++)
     {
-        candidates[i].name = argv[i];
+        candidates[i].name = argv[i + 1];
     }
     // check for invalid usage
     if (argc < 2)
@@ -37,20 +37,20 @@ int main(int argc, string argv[])
     printf("%s\n", candidates[0].name);
 }
 
-// bool vote(string name)
-// {
-//     for (int i = 0; i < 4; i++)
-//     {
-//         if (name == candidates[i].name)
-//         {
-//             candidates[i].votes++;
-//             return true;
-//         }
-//         else
-//         {
-//             return false;
-//         }
-//     }
-//     return true;
-// }
+bool vote(string name)
+{
+    for (int i = 0; i < 4; i++)
+    {
+        if (name == candidates[i].name)
+        {
+            candidates[i].votes++;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    return true;
+}
 
