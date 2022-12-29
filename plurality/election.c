@@ -38,7 +38,7 @@ int main(int argc, string argv[])
 
 bool vote(string name)
 {
-    for (int i = 0; i < voter_count; i++)
+    for (int i = 0; i <= voter_count; i++)
     {
         if (name == candidates[i].name)
         {
