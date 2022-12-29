@@ -30,7 +30,7 @@ int main(int argc, string argv[])
     voter_count = get_int("Number of voters: ");
     candidate_count = argc - 1;
 
-    for (int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < voter_count; i++)
     {
         candidates[i].name = get_string("Vote: ");
     }
