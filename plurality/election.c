@@ -58,9 +58,9 @@ void print_winner(void)
 {
     for (int i = 0; i < 4; i++)
     {
-        if (vote(candidate[i]) == true)
+        if ()
         {
-            
+
         }
     }
 }
