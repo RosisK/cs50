@@ -48,3 +48,5 @@ bool vote(string name)
     }
     return true;
 }
+
+void print_winner()
