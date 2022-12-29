@@ -10,10 +10,10 @@ typedef struct
 candidate;
 
 candidate candidates[4];
+int voter_count, candidate_count;
 
 int main(int argc, string argv[])
 {
-    int voter_count, candidate_count;
     // check for invalid usage
     if (argc < 2)
     {
@@ -32,5 +32,16 @@ int main(int argc, string argv[])
 
 bool vote(string name);
 {
-    
+    for (int i = 0; i < 4; i++)
+    {
+        if (name == candidates[i].name)
+        {
+            candidates[i].votes++;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
