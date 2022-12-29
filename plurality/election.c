@@ -51,6 +51,16 @@ bool vote(string name)
             return false;
         }
     }
-    return true;
+    return false;
 }
 
+void print_winner(void)
+{
+    for (int i = 0; i < 4; i++)
+    {
+        if (vote(candidate[i]) == true)
+        {
+            
+        }
+    }
+}
