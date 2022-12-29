@@ -3,6 +3,7 @@
 #include <string.h>
 
 bool vote(string name);
+void print_winner(void);
 
 typedef struct
 {
@@ -53,3 +54,29 @@ bool vote(string name)
     return false;
 }
 
+void print_winner(void)
+{
+    for (int i = 0; i < voter_count; i++)
+    {
+        if (candidates[0].votes > candidates[1].votes || candidates[0].votes > candidates[2].votes || candidates[0].votes > candidates[3].votes)
+        {
+            printf("%s\n", candidates[0].name);
+        }
+
+        else if (candidates[1].votes > candidates[0].votes || candidates[1].votes > candidates[2].votes || candidates[1].votes > candidates[3].votes)
+        {
+            printf("%s\n", candidates[1].name);
+        }
+
+        else if (candidates[2].votes > candidates[1].votes || candidates[2].votes > candidates[0].votes || candidates[2].votes > candidates[3].votes)
+        {
+            printf("%s\n", candidates[2].name);
+        }
+
+        else if (candidates[3].votes > candidates[1].votes || candidates[3].votes > candidates[2].votes || candidates[3].votes > candidates[0].votes)
+        {
+            printf("%s\n", candidates[3].name);
+        }
+
+    }
+}
