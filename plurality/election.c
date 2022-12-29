@@ -56,8 +56,6 @@ bool vote(string name)
 
 void print_winner(void)
 {
-    for (int i = 0; i < voter_count; i++)
-    {
         if (candidates[0].votes > candidates[1].votes || candidates[0].votes > candidates[2].votes || candidates[0].votes > candidates[3].votes)
         {
             printf("%s\n", candidates[0].name);
@@ -77,6 +75,4 @@ void print_winner(void)
         {
             printf("%s\n", candidates[3].name);
         }
-
-    }
 }
