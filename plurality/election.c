@@ -34,7 +34,6 @@ int main(int argc, string argv[])
     {
         candidates[i].name = get_string("Vote: ");
     }
-    printf("%s\n", candidates[0].name);
 }
 
 bool vote(string name)
