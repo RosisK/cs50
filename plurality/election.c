@@ -2,6 +2,12 @@
 #include <cs50.h>
 #include <string.h>
 
+typedef struct
+{
+    string name;
+    int votes;
+}
+
 int main(int argc, string argv[])
 {
     // check for invalid usage
