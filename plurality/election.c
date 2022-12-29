@@ -2,6 +2,8 @@
 #include <cs50.h>
 #include <string.h>
 
+bool vote(string name);
+
 typedef struct
 {
     string name;
@@ -30,7 +32,7 @@ int main(int argc, string argv[])
     }
 }
 
-bool vote(string name);
+bool vote(string name)
 {
     for (int i = 0; i < 4; i++)
     {
@@ -44,4 +46,5 @@ bool vote(string name);
             return false;
         }
     }
+    return true;
 }
