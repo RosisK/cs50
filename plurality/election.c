@@ -34,22 +34,23 @@ int main(int argc, string argv[])
     {
         candidates[i].name = get_string("Vote: ");
     }
+    printf("%s\n", candidates[0].name);
 }
 
-bool vote(string name)
-{
-    for (int i = 0; i < 4; i++)
-    {
-        if (name == candidates[i].name)
-        {
-            candidates[i].votes++;
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-    return true;
-}
+// bool vote(string name)
+// {
+//     for (int i = 0; i < 4; i++)
+//     {
+//         if (name == candidates[i].name)
+//         {
+//             candidates[i].votes++;
+//             return true;
+//         }
+//         else
+//         {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
 
