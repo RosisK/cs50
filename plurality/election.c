@@ -30,4 +30,7 @@ int main(int argc, string argv[])
     }
 }
 
-bool votes
+bool vote(string name);
+{
+    
+}
