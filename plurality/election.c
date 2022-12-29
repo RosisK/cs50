@@ -24,7 +24,9 @@ int main(int argc, string argv[])
     voter_count = get_int("Number of voters: ");
     candidate_count = argc - 1;
 
-    string 
+    for (int i = 0; i < candidate_count; i++)
+    {
+        candidates[i].name = get_string("Vote: ");
+    }
 }
 
-bool
