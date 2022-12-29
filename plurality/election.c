@@ -9,11 +9,11 @@ typedef struct
 }
 candidate;
 
+candidate candidates[4];
 
 int main(int argc, string argv[])
 {
-    candidate candidates[4];
-
+    int voter_count, candidate_count;
     // check for invalid usage
     if (argc < 2)
     {
@@ -21,5 +21,10 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    int 
+    voter_count = get_int("Number of voters: ");
+    candidate_count = argc - 1;
+
+    string 
 }
+
+bool
