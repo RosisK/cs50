@@ -36,7 +36,7 @@ int main(int argc, string argv[])
         candidates[i].name = get_string("Vote: ");
     }
 
-    bool whowin = vote()
+    bool whowin = vote(candidates[])
     print_winner();
 }
 
