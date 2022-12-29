@@ -16,7 +16,10 @@ int voter_count, candidate_count;
 
 int main(int argc, string argv[])
 {
-    candidates[4] = argv[];
+    for (int i = 0; i < 5; i++)
+    {
+        candidates[i].name = argv[i];
+    }
     // check for invalid usage
     if (argc < 2)
     {
