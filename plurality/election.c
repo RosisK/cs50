@@ -25,11 +25,16 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    // check 
+    // check for max no of candidates
     candidate_count = argc -1;
     if (candidate_count > MAX)
     {
         printf("Maximum number of candidates is %i\n", MAX);
         return 1;
+    }
+
+    for (int i = 0; i < candidate_count; i++)
+    {
+        
     }
 }
