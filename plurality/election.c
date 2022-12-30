@@ -14,9 +14,21 @@ candidate;
 
 // define array of candidates
 candidate candidates[MAX];
+int candidate_count;
 
 int main(int argc, string argv[])
 {
     // check for invalid usage
-    
+    if (argc < 2)
+    {
+        printf("Usage: ./election [candidates]\n");
+        return 1;
+    }
+
+    candidate_count = argc -1;
+    if (candidate_count > MAX)
+    {
+        printf("Maximum number of candidates is %i\n", MAX);
+        return 1;
+    }
 }
