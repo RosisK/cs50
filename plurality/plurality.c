@@ -25,7 +25,7 @@ int main(int argc, string argv[])
     // check for invalid usage
     if (argc < 2)
     {
-        printf("Usage: ./election [candidates]\n");
+        printf("Usage: ./plurality [candidates]\n");
         return 1;
     }
 
