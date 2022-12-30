@@ -92,9 +92,9 @@ int calculate_pennies(int cents)
     {
         if (cents >= 1)
         {
-            int dimes = cents - 1;
+            int pennies = cents - 1;
         }
     }
     while (cents >= 1);
-    return dimes;
+    return pennies;
 }
