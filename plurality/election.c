@@ -2,7 +2,7 @@
 #include <cs50.h>
 #include <string.h>
 
-bool vote(name);
+bool vote(string name);
 void printwinner(void);
 
 // set limit for maximum candidate number
@@ -19,7 +19,6 @@ candidate;
 // define array of candidates
 candidate candidates[MAX];
 int candidate_count, voter_count;
-string name;
 
 int main(int argc, string argv[])
 {
@@ -48,7 +47,7 @@ int main(int argc, string argv[])
 
     for (int i = 0; i < voter_count; i++)
     {
-        name = get_string("Vote: ");
+        string name = get_string("Vote: ");
 
         if (vote(name) == false)
         {
@@ -59,7 +58,7 @@ int main(int argc, string argv[])
     printwinner();
 }
 
-bool vote(name)
+bool vote(string name)
 {
     for (int i = 0; i < voter_count; i++)
     {
