@@ -18,7 +18,7 @@ string candy_name;
 
 int main(int argc, string argv[])
 {
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         candidates[i].name = argv[i + 1];
     }
