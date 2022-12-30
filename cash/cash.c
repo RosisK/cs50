@@ -49,20 +49,22 @@ int get_cents(void)
 
 int calculate_quarters(int cents)
 {
+    int quaters;
     do
     {
         if (cents >= 25)
         {
-                dimes = cents - 25;
+                quaters = cents - 25;
         }
     }
     while (cents >= 25);
-    return dimes;
+    return quaters;
 }
 
 int calculate_dimes(int cents)
 {
-   do
+    int dimes;
+    do
     {
         if (cents >= 10)
         {
