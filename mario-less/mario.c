@@ -7,7 +7,7 @@ int main(void)
 
     for (int i = 0; i < height; i++)
     {
-        for (int k = 0; k < (height - i) - 1; i++)
+        for (int k = 0; k < (height - i) - 1; k++)
         {
             printf(" ");
         }
