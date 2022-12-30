@@ -14,7 +14,8 @@ candidate;
 
 // define array of candidates
 candidate candidates[MAX];
-int candidate_count;
+int candidate_count, voter_count;
+string 
 
 int main(int argc, string argv[])
 {
@@ -40,4 +41,9 @@ int main(int argc, string argv[])
     }
 
     voter_count = get_int("Number of votes: ");
+
+    for (int i = 0; i < voter_count; i++)
+    {
+
+    }
 }
