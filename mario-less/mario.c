@@ -7,11 +7,14 @@ int main(void)
 
     for (int i = 0; i < height; i++)
     {
+        for (int k = 0; k < (height - i) - 1; i++)
+        {
+            printf(" ");
+        }
         for (int j = 0; j <= height - (height - i); j++)
         {
             printf("#");
         }
-        for (int k = 0; )
         printf("\n");
     }
 }
