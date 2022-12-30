@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
+// Prototypes for functions
 int get_cents(void);
 int calculate_quarters(int cents);
 int calculate_dimes(int cents);
