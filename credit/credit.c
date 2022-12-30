@@ -3,6 +3,6 @@
 
 int main(void)
 {
-    int card = get_int("Number: ");
+    long card = get_long("Number: ");
     
 }
