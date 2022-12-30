@@ -25,6 +25,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    // check 
     candidate_count = argc -1;
     if (candidate_count > MAX)
     {
