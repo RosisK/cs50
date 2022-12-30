@@ -82,7 +82,7 @@ void printwinner(void)
         {
             maxvotes = candidates[i].votes;
         }
-    }
+    }`
 
     for (int i = 0; i < candidate_count; i++)
     {
