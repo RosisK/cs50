@@ -64,23 +64,37 @@ int calculate_dimes(int cents)
 {
    do
     {
-        if (cents >= 25)
+        if (cents >= 10)
         {
-            int dimes = cents - 25;
+            int dimes = cents - 10;
         }
     }
-    while (cents >= 25);
+    while (cents >= 10);
     return dimes;
 }
 
 int calculate_nickels(int cents)
 {
-    // TODO
-    return 0;
+    do
+    {
+        if (cents >= 5)
+        {
+            int nickels = cents - 5;
+        }
+    }
+    while (cents >= 5);
+    return nickels;
 }
 
 int calculate_pennies(int cents)
 {
-    // TODO
-    return 0;
+    do
+    {
+        if (cents >= 1)
+        {
+            int dimes = cents - 1;
+        }
+    }
+    while (cents >= 1);
+    return dimes;
 }
