@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <string.h>
 
 // set limit for maximum candidate number
 #define MAX 9
@@ -15,7 +16,7 @@ candidate;
 // define array of candidates
 candidate candidates[MAX];
 int candidate_count, voter_count;
-string 
+string name;
 
 int main(int argc, string argv[])
 {
@@ -44,6 +45,25 @@ int main(int argc, string argv[])
 
     for (int i = 0; i < voter_count; i++)
     {
+        name = get_string("Vote: ");
 
+        if (vote(name) == false)
+        {
+            printf("Invalid Vote\n");
+        }
+    }
+
+    printwinner();
+}
+
+bool vote(string name)
+{
+    for (int i = 0; i < voter_count; i++)
+    {
+        if (strcmp(name, candidates[i]) == 0)
+        {
+            candidates[i].votes++;
+            return true;
+        }
     }
 }
