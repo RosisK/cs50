@@ -38,7 +38,7 @@ int main(int argc, string argv[])
         bool whowin = vote(candy_name);
     }
 
-    print_winner(); 
+    print_winner();
 }
 
 bool vote(string name)
@@ -58,27 +58,3 @@ bool vote(string name)
     return false;
 }
 
-void print_winner(void)
-{
-        if (candidates[0].votes > candidates[1].votes || candidates[0].votes > candidates[2].votes || candidates[0].votes > candidates[3].votes)
-        {
-            printf("%s\n", candidates[0].name);
-        }
-
-        else if (candidates[1].votes > candidates[0].votes || candidates[1].votes > candidates[2].votes || candidates[1].votes > candidates[3].votes)
-        {
-            printf("%s\n", candidates[1].name);
-        }
-
-        else if (candidates[2].votes > candidates[1].votes || candidates[2].votes > candidates[0].votes || candidates[2].votes > candidates[3].votes)
-        {
-            printf("%s\n", candidates[2].name);
-        }
-
-        else if (candidates[3].votes > candidates[1].votes || candidates[3].votes > candidates[2].votes || candidates[3].votes > candidates[0].votes)
-        {
-            printf("%s\n", candidates[3].name);
-        }
-        else
-        return;
-}
