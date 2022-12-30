@@ -2,6 +2,9 @@
 #include <cs50.h>
 #include <string.h>
 
+bool vote(name);
+void printwinner(void);
+
 // set limit for maximum candidate number
 #define MAX 9
 
@@ -56,7 +59,7 @@ int main(int argc, string argv[])
     printwinner();
 }
 
-bool vote(string name)
+bool vote(name)
 {
     for (int i = 0; i < voter_count; i++)
     {
@@ -71,3 +74,7 @@ bool vote(string name)
     return false;
 }
 
+void printwinner(void)
+{
+    return;
+}
