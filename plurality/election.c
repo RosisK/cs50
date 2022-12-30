@@ -38,7 +38,7 @@ int main(int argc, string argv[])
         bool whowin = vote(candy_name);
     }
 
-    print_winner();
+    print_winner(); 
 }
 
 bool vote(string name)
