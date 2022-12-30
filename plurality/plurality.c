@@ -2,10 +2,13 @@
 #include <cs50.h>
 #include <string.h>
 
-// Max number of candidates
+bool vote(string name);
+void printwinner(void);
+
+// set limit for maximum candidate number
 #define MAX 9
 
-// Candidates have name and vote count
+// define a data type containing candidate name and no. of vote
 typedef struct
 {
     string name;
@@ -13,66 +16,80 @@ typedef struct
 }
 candidate;
 
-// Array of candidates
+// define array of candidates
 candidate candidates[MAX];
-
-// Number of candidates
-int candidate_count;
-
-// Function prototypes
-bool vote(string name);
-void print_winner(void);
+int candidate_count, voter_count;
 
 int main(int argc, string argv[])
 {
-    // Check for invalid usage
+    // check for invalid usage
     if (argc < 2)
     {
-        printf("Usage: plurality [candidate ...]\n");
+        printf("Usage: ./election [candidates]\n");
         return 1;
     }
 
-    // Populate array of candidates
-    candidate_count = argc - 1;
+    // check for max no of candidates
+    candidate_count = argc -1;
     if (candidate_count > MAX)
     {
         printf("Maximum number of candidates is %i\n", MAX);
-        return 2;
+        return 1;
     }
+
     for (int i = 0; i < candidate_count; i++)
     {
         candidates[i].name = argv[i + 1];
         candidates[i].votes = 0;
     }
 
-    int voter_count = get_int("Number of voters: ");
+    voter_count = get_int("Number of votes: ");
 
-    // Loop over all voters
     for (int i = 0; i < voter_count; i++)
     {
         string name = get_string("Vote: ");
 
-        // Check for invalid vote
-        if (!vote(name))
+        if (vote(name) == false)
         {
-            printf("Invalid vote.\n");
+            printf("Invalid Vote\n");
         }
     }
 
-    // Display winner of election
-    print_winner();
+    printwinner();
 }
 
-// Update vote totals given a new vote
 bool vote(string name)
 {
-    // TODO
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (strcmp(name, candidates[i].name) == 0)
+        {
+            candidates[i].votes++;
+            return true;
+        }
+        else
+        continue;
+    }
     return false;
 }
 
-// Print the winner (or winners) of the election
-void print_winner(void)
+void printwinner(void)
 {
-    // TODO
+    int maxvotes = 0;
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].votes > maxvotes)
+        {
+            maxvotes = candidates[i].votes;
+        }
+    }
+
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (maxvotes == candidates[i].votes)
+        {
+            printf("%s\n", candidates[i].name);
+        }
+    }
     return;
 }
