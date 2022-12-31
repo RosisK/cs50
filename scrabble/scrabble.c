@@ -29,20 +29,21 @@ int main(void)
 int compute_score(string word)
 {
     int score = 0;
+    int num;
     for (int i = 0; i < strlen(word); i++)
     {
         if (isupper(word[i]))
         {
-            word[i] = word[i] - 65;
+            num = POINTS[word[i] - 65];
+            score = score + num;
         }
         else if (islower(word[i]))
         {
-            word[i] = word[i] - 97;
+            num = POINTS[word[i] - 97];
+            score = score + num;
         }
         else
         continue;
-        int num = POINTS[(int) word[i]];
-        score = score + num;
     }
     return score;
 }
