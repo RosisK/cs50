@@ -34,14 +34,10 @@ int compute_score(string word)
         if (isupper(word[i]))
         {
             word[i] = word[i] - 65;
-            int num = POINTS[(int) word[i]];
-            score = score + num;
         }
         else if (islower(word[i]))
         {
             word[i] = word[i] - 97;
-            int num = POINTS[(int) word[i]];
-            score = score + num;
         }
         else
         continue;
