@@ -1,6 +1,6 @@
-#include <ctype.h>
-#include <cs50.h>
 #include <stdio.h>
+#include <cs50.h>
+#include <ctype.h>
 #include <string.h>
 
 // Points assigned to each letter of the alphabet
@@ -23,5 +23,17 @@ int main(void)
 
 int compute_score(string word)
 {
-    // TODO: Compute and return score for string
+    for (int i = 0; i < strlen(word); i++)
+    {
+        if (isupper(word[i]))
+        {
+            word[i] = word[i] - 65;
+        }
+        else
+        {
+            word[i] = word[i] - 97;
+        }
+
+        
+    }
 }
