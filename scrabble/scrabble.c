@@ -18,7 +18,10 @@ int main(void)
     int score1 = compute_score(word1);
     int score2 = compute_score(word2);
 
-    if ();
+    if (score1 > score2)
+        printf("Player 1 Wins\n");
+    else
+    printf("Player 2 Wins\n");
 }
 
 int compute_score(string word)
@@ -35,7 +38,7 @@ int compute_score(string word)
             word[i] = word[i] - 97;
         }
 
-        int num = POINTS[word[i]];
+        int num = POINTS[(int) word[i]];
         score = score + num;
     }
     return score;
