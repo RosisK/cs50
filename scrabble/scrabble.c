@@ -18,11 +18,12 @@ int main(void)
     int score1 = compute_score(word1);
     int score2 = compute_score(word2);
 
-    printf("%i\n%i\n", score1, score2);
+    if ();
 }
 
 int compute_score(string word)
 {
+    int score = 0;
     for (int i = 0; i < strlen(word); i++)
     {
         if (isupper(word[i]))
@@ -35,8 +36,7 @@ int compute_score(string word)
         }
 
         int num = POINTS[word[i]];
-        int score = num
-
+        score = score + num;
     }
-    return 1;
+    return score;
 }
