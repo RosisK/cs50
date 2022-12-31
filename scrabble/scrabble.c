@@ -34,8 +34,9 @@ int compute_score(string word)
             word[i] = word[i] - 97;
         }
 
-        int num = word[i];
-        return num;
+        int num = POINTS[word[i]];
+        int score = num
+
     }
     return 1;
 }
