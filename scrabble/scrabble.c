@@ -45,6 +45,8 @@ int compute_score(string word)
         }
         else
         continue;
+        int num = POINTS[(int) word[i]];
+        score = score + num;
     }
     return score;
 }
