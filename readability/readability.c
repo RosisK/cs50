@@ -9,7 +9,7 @@ int word_count(string s);
 int main(void)
 {
     string input = get_string("Text: ");
-    printf("%i words, %i letters\n", word_count(input), letter_count(input));
+    
 }
 
 int letter_count(string s)
@@ -41,5 +41,13 @@ int word_count(string s)
 
 int sentence_count(string s)
 {
-    int 
+    int sentence = 0;
+    for (int i = 0; i < strlen(s); i++)
+    {
+        if (s[i] == '!' || s[i] == '.', || s[i] == '?')
+        {
+            sentence++;
+        }
+    }
+    return sentence;
 }
