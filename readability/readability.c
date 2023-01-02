@@ -11,7 +11,7 @@ int sentence_count(string s);
 int main(void)
 {
     int letters, words, sentences, grade;
-    int index;
+    float index;
 
     string input = get_string("Text: ");
 
@@ -24,7 +24,7 @@ int main(void)
 
     index = 0.0588 * L - 0.296 * S - 15.8;
 
-    printf("Grade %i\n", grade);
+    printf("Grade %d\n", (int) round(index));
 }
 
 int letter_count(string s)
