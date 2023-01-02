@@ -1,1 +1,6 @@
 Get user input
+Needed parameters
+    total number of letters in the input
+    total number of words in the input
+    total number of sentences in the input
+    
