@@ -3,5 +3,6 @@
 
 int main(int argc, string argv[])
 {
-    string 
+    string plain = get_string("Plain Text: ");
+    
 }
