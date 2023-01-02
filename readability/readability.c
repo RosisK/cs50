@@ -38,3 +38,8 @@ int word_count(string s)
     int word = space + 1;
     return word;
 }
+
+int sentence_count(string s)
+{
+    int 
+}
