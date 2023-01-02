@@ -23,3 +23,8 @@ int letter_count(string s)
     }
     return letter;
 }
+
+int word_count(string s)
+{
+    
+}
