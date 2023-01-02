@@ -23,8 +23,8 @@ int main(void)
     float S = (sentences / words) * 100;
 
     index = 0.0588 * L - 0.296 * S - 15.8;
-
-    printf("Grade %d\n", (int) round(index));
+    
+    printf("Grade %d\n", );
 }
 
 int letter_count(string s)
