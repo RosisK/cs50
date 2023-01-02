@@ -19,10 +19,15 @@ int main(void)
     words = word_count(input);
     sentences = sentence_count(input);
 
-    float L = ( (float)letters / words) * 100;
-    float S = (sentences / words) * 100;
+    float L = ( (float) letters / (float) words) * 100;
+    float S = ((float) sentences / (float) words) * 100;
 
     index = round(0.0588 * L - 0.296 * S - 15.8);
+
+    if (index > 16)
+    {
+        printf("Above G)
+    }
 
     printf("Grade %d\n", index);
 }
