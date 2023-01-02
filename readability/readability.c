@@ -23,7 +23,7 @@ int main(void)
     float S = (sentences / words) * 100;
 
     index = 0.0588 * L - 0.296 * S - 15.8;
-    grade = round(index);
+    grade = (int) round(index);
 
     printf("Grade %i\n", grade);
 }
