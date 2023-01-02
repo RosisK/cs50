@@ -9,7 +9,8 @@ int sentence_count(string s);
 
 int main(void)
 {
-    int letters, words, sentences, index;
+    int letters, words, sentences, grade;
+    float index;
 
     string input = get_string("Text: ");
 
@@ -21,6 +22,7 @@ int main(void)
     float S = (sentences / words) * 100;
 
     index = 0.0588 * L - 0.296 * S - 15.8;
+    grade = round(index);
 
     printf("Grade %i\n", index);
 }
