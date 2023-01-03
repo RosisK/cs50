@@ -8,7 +8,10 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar [key]\n");
         return 1;
     }
-    if ()
+    for (int i = 0; i < ; i++)
+    {
+        
+    }
     string plain = get_string("Plain Text: ");
 
 }
