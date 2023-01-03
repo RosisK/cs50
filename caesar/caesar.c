@@ -3,6 +3,12 @@
 
 int main(int argc, string argv[])
 {
-    string plain = get_string("Plain Text: ");
+    if (argc != 2)
+    {
+        printf("Usage: ./caesar [key]\n");
+        return 1;
+    }
     
+    string plain = get_string("Plain Text: ");
+
 }
