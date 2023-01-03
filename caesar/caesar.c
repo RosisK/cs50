@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <ctype.h>
 
 int main(int argc, string argv[])
 {
@@ -8,9 +9,10 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar [key]\n");
         return 1;
     }
-    for (int i = 0; i < ; i++)
+    if (!isdigit(argv[1]))
     {
-        
+        printf("Usage: ./caesar [key]\nKey must be a decimal number\n");
+        return 1;
     }
     string plain = get_string("Plain Text: ");
 
