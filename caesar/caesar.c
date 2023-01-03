@@ -1,5 +1,5 @@
-#include <cs50.h>
 #include <stdio.h>
+#include <cs50.h>
 
 int main(int argc, string argv[])
 {
@@ -8,7 +8,7 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar [key]\n");
         return 1;
     }
-    
+    if ()
     string plain = get_string("Plain Text: ");
 
 }
