@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <cs50.h>
+#include "rosis.h"
 
 int main(void)
 {
-    string name = get_string("What's your name?\n");
-    printf("hello %s\n", name);
+    string name = get_string("What is your name ?\n");
+    printf("Oh hey %s!! It's nice to meet you!\n", name);
 }
