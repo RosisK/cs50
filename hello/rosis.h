@@ -7,4 +7,6 @@ string get_string(string s)
     string input;
     printf("%s", s);
     scanf("%s", input);
+
+    return input;
 }
