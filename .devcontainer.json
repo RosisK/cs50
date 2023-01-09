@@ -26,13 +26,13 @@
   "image": "ghcr.io/cs50/codespace:303d6c02a12c35efe5040f102f6054b4e432cb11",
   "postCreateCommand": "/opt/cs50/bin/postCreateCommand",
   "settings": {
-    "C_Cpp.autocomplete": "Disabled",
-    "C_Cpp.codeFolding": "Disabled",
+    "C_Cpp.autocomplete": "disabled",
+    "C_Cpp.codeFolding": "disabled",
     "C_Cpp.debugShortcut": false,
     "C_Cpp.dimInactiveRegions": false,
     "C_Cpp.doxygen.generateOnType": false,
-    "C_Cpp.enhancedColorization": "Enabled",
-    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.enhancedColorization": "enabled",
+    "C_Cpp.errorSquiggles": "disabled",
     "breadcrumbs.enabled": false,
     "editor.autoClosingQuotes": "never",
     "editor.colorDecorators": false,
@@ -116,6 +116,7 @@
       "workbench.action.toggleSidebarVisibility"
     ],
     "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.gpuAcceleration": "off",
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.profiles.linux": {
       "JavaScript Debug Terminal": null,
