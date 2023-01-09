@@ -4,7 +4,7 @@ typedef char *string;
 
 string get_string(string s)
 {
-    string input;
+    string input = "";
     printf("%s", s);
     scanf("%s", input);
 
