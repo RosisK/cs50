@@ -9,7 +9,7 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar [key]\n");
         return 1;
     }
-    int key =  argv[1];
+    string key = argv[1];
     if (!isdigit(key))
     {
         printf("Usage: ./caesar [key]\nKey must be a decimal number\n");
