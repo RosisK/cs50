@@ -8,7 +8,7 @@ int main(int argc, string argv[])
 {
     if (argc != 2)
     {
-        printf("Usage: ./caesar [key]\n"); 
+        printf("Usage: ./caesar [key]\n");
         return 1;
     }
 
@@ -24,4 +24,9 @@ int main(int argc, string argv[])
     }
     string plain = get_string("Plain Text: ");
 
+}
+
+char rotate(char c, int key)
+{
+    
 }
