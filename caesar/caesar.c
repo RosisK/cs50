@@ -29,9 +29,16 @@ int main(int argc, string argv[])
 char rotate(char p, int key)
 {
     char cipher;
-    if (isupper(c))
+    if (isupper(D))
     {
-        cipher = ()
+        cipher = (((p - 65) + key) % 26) + 65;
     }
-    cipher = (p + key) % 26;
+    else if (islower(c))
+    {
+        cipher = (((p - 97) + key) % 26) + 97;
+    }
+    else
+    cipher = c;
+
+    return cipher;
 }
