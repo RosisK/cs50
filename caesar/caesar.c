@@ -26,7 +26,12 @@ int main(int argc, string argv[])
 
 }
 
-char rotate(char c, int key)
+char rotate(char p, int key)
 {
-    
+    char cipher;
+    if (isupper(c))
+    {
+        cipher = ()
+    }
+    cipher = (p + key) % 26;
 }
