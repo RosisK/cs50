@@ -42,6 +42,10 @@ void rotate(string p, int key)
     // Using a for loop to go through each character in plain text and encrypt it using the key
     for (int i = 0; i < strlen(p); i++)
     {
+        if (p[i] == '\0')
+        {
+            break;
+        }
         if (isupper(p[i]))
         {
             cipher = (((p[i] - 65) + key) % 26) + 65;
