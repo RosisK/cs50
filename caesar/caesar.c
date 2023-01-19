@@ -33,7 +33,7 @@ int main(int argc, string argv[])
 void rotate(string p, int key)
 {
     char cipher;
-    string ctext[255];
+    char ctext[255];
     for (int i = 0; i < strlen(p); i++)
     {
         if (isupper(p[i]))
