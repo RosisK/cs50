@@ -52,8 +52,9 @@ void rotate(string p, int key)
         }
         else
         cipher = p[i];
-
+        // Storing each encrypted character in an array
         ctext[i] = cipher;
     }
+    // Printing out the cipher text
     printf("ciphertext: %s\n", ctext);
 }
