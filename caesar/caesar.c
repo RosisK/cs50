@@ -4,6 +4,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define MAX 10;
+
+void rotate(string p, int key);
+
 int main(int argc, string argv[])
 {
     if (argc != 2)
@@ -23,22 +27,27 @@ int main(int argc, string argv[])
         }
     }
     string plain = get_string("Plain Text: ");
-
+    rotate(plain, key);
 }
 
-char rotate(char p, int key)
+void rotate(string p, int key)
 {
     char cipher;
-    if (isupper(p))
+    string ctext[255];
+    for (int i = 0; i < strlen(p); i++)
     {
-        cipher = (((p - 65) + key) % 26) + 65;
-    }
-    else if (islower(p))
-    {
-        cipher = (((p - 97) + key) % 26) + 97;
-    }
-    else
-    cipher = p;
+        if (isupper(p[i]))
+        {
+            cipher = (((p[i] - 65) + key) % 26) + 65;
+        }
+        else if (islower(p[i]))
+        {
+            cipher = (((p[i] - 97) + key) % 26) + 97;
+        }
+        else
+        cipher = p[i];
 
-    return cipher;
+        ctext[i] = cipher;
+    }
+    printf("Cipher Text: %s\n", ctext);
 }
