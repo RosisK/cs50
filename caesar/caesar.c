@@ -42,6 +42,7 @@ void rotate(string p, int key)
     // Using a for loop to go through each character in plain text and encrypt it using the key
     for (int i = 0; i < strlen(p); i++)
     {
+        // Telling the compiler to break out of the loop if it reaches the end of the string
         if (p[i] == '\0')
         {
             break;
@@ -60,6 +61,9 @@ void rotate(string p, int key)
         }
         // Storing each encrypted character in an array
         ctext[i] = cipher;
+
+        // Adding a null-terminating character at the end of the array
+        ctext[strlen(p)] = '\0';
     }
     // Printing out the cipher text
     printf("ciphertext: %s\n", ctext);
