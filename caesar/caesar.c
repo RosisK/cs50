@@ -4,20 +4,22 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX 10;
-
+// Declared prototype
 void rotate(string p, int key);
 
 int main(int argc, string argv[])
 {
+    // Validating the use of command line argument
     if (argc != 2)
     {
         printf("Usage: ./caesar [key]\n");
         return 1;
     }
 
+    // Converting the key to integer to be used in calculations
     int key = atoi(argv[1]);
 
+    // Making sure the key is entirely composed of numbers
     for (int i = 0; i < strlen(argv[1]); i++)
     {
         if (isdigit(argv[1][i]) == 0)
@@ -26,14 +28,18 @@ int main(int argc, string argv[])
             return 1;
         }
     }
-    string plain = get_string("Plain Text: ");
+
+    // Prompting user for plain text
+    string plain = get_string("plaintext: ");
+    // Calling the function to print the cipher text
     rotate(plain, key);
 }
 
+// Function to encipher the text and print it
 void rotate(string p, int key)
 {
-    char cipher;
-    char ctext[255];
+    char cipher, ctext[255];
+    // Using a for loop to go through each character in plain text and encrypt it using the key
     for (int i = 0; i < strlen(p); i++)
     {
         if (isupper(p[i]))
@@ -49,5 +55,5 @@ void rotate(string p, int key)
 
         ctext[i] = cipher;
     }
-    printf("Cipher Text: %s\n", ctext);
+    printf("ciphertext: %s\n", ctext);
 }
