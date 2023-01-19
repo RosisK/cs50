@@ -50,8 +50,10 @@ void rotate(string p, int key)
         {
             cipher = (((p[i] - 97) + key) % 26) + 97;
         }
-        else
-        cipher = p[i];
+        else if (ispunct(p[i]) || isspace(p[i]))
+        {
+            cipher = p[i];
+        }
         // Storing each encrypted character in an array
         ctext[i] = cipher;
     }
