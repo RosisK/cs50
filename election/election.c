@@ -9,6 +9,9 @@ int main(int argc, string argv[])
 {
     if (argc <= 2)
     {
-        printf("Usage)
+        printf("Usage: ./election [candidates]");
+        return 1;
     }
+
+    if ()
 }
