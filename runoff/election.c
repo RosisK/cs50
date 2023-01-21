@@ -8,5 +8,5 @@ int main(int argc, string argv[])
         printf("Usage: ./election [candidates]");
         return 1;
     }
-    for (int i = 0; i < strlen(a))
+    for (int i = 0; i < strlen(argv))
 }
