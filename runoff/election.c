@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <stdio.h>
 
-#define MAX 9;
+#define MAX 9
 
 typedef struct
 {
@@ -14,16 +14,22 @@ typedef struct
 candidate;
 
 candidate candidates[MAX];
+int candidate_count, voter_count;
 
 int main(int argc, string argv[])
 {
     if (argc <= 2)
     {
-        printf("Usage: ./election [candidates]");
+        printf("Usage: ./election [candidates]\n");
         return 1;
     }
-    for (int i = 0; i < strlen(argv[i]); i++)
+    candidate_count = argc -1;
+    if (candidate_count > MAX)
     {
-        if ()
+        printf("Usage: ./election [candidates]\nMaximum number of candidates is %i\n", MAX);
+    }
+    for (int i = 0; i < candidate_count; i++)
+    {
+        candidates.name[i] = argv[i + 1];
     }
 }
