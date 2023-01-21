@@ -3,6 +3,8 @@
 #include <ctype.h>
 #include <stdio.h>
 
+#define MAX 9;
+
 typedef struct
 {
     string name;
@@ -11,7 +13,7 @@ typedef struct
 }
 candidate;
 
-
+candidate candidates[MAX];
 
 int main(int argc, string argv[])
 {
