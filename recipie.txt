@@ -1,5 +1,4 @@
 validate the command line argument
 the argument is invalid if
     argument isn't typed
-    argument contains number
     no of candidates is more than 9
