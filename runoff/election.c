@@ -15,6 +15,7 @@ candidate;
 
 candidate candidates[MAX];
 int candidate_count, voter_count;
+int preferance[voter][candidate];
 
 int main(int argc, string argv[])
 {
@@ -33,5 +34,5 @@ int main(int argc, string argv[])
     {
         candidates[i].name = argv[i + 1];
     }
-    
+
 }
