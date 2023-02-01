@@ -15,7 +15,7 @@ candidate;
 
 candidate candidates[MAX];
 int candidate_count, voter_count;
-int preferance[voter][candidate];
+int preferance[MAX_VOTERS][MAX_CANDIDATES];
 
 int main(int argc, string argv[])
 {
