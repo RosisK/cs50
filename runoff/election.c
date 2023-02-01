@@ -3,7 +3,9 @@
 #include <ctype.h>
 #include <stdio.h>
 
-#define MAX 9
+// Max no of voters and candidates
+#define MAX_VOTERS
+#define MAX_CANDIDATES
 
 typedef struct
 {
@@ -13,9 +15,10 @@ typedef struct
 }
 candidate;
 
+int preferance[MAX_VOTERS][MAX_CANDIDATES];
+
 candidate candidates[MAX];
 int candidate_count, voter_count;
-int preferance[MAX_VOTERS][MAX_CANDIDATES];
 
 int main(int argc, string argv[])
 {
