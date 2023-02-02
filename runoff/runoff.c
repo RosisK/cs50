@@ -128,7 +128,7 @@ bool vote(int voter, int rank, string name)
 {
     for (int i = 0; i < ; i++)
     {
-        if ()
+        if (candidates[i].name )
     }
     return false;
 }
