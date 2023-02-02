@@ -46,7 +46,7 @@ int main(int argc, string argv[])
     if (candidate_count > MAX_CANDIDATES)
     {
         printf("Maximum number of candidates is %i\n", MAX_CANDIDATES);
-        return 2;
+        return 1;
     }
     for (int i = 0; i < candidate_count; i++)
     {
