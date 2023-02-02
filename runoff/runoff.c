@@ -59,7 +59,7 @@ int main(int argc, string argv[])
     if (voter_count > MAX_VOTERS)
     {
         printf("Maximum number of voters is %i\n", MAX_VOTERS);
-        return 3;
+        return 1;
     }
 
     // Keep querying for votes
