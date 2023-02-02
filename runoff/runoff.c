@@ -131,11 +131,12 @@ bool vote(int voter, int rank, string name)
     {
         if (strcmp(candidates[i].name, name) == 0)
         {
-            preferances[voter][rank] == candidates[i].name;
+            preferences[voter][rank] = candidates[i].name;
             return true;
         }
+        else
+        return false;
     }
-    return false;
 }
 
 // Tabulate votes for non-eliminated candidates
