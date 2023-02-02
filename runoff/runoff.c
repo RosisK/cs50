@@ -1,5 +1,5 @@
-#include <cs50.h>
 #include <stdio.h>
+#include <cs50.h>
 
 // Max voters and candidates
 #define MAX_VOTERS 100

@@ -15,6 +15,7 @@ typedef struct
 }
 candidate;
 
+// In preference[i][j], i represents the voter, and j represents their preference
 int preferance[MAX_VOTERS][MAX_CANDIDATES];
 
 candidate candidates[MAX];
