@@ -72,7 +72,7 @@ int main(int argc, string argv[])
             string name = get_string("Rank %i: ", j + 1);
 
             // Record vote, unless it's invalid
-            if (!vote(i, j, name))
+            if (vote(i, j, name))
             {
                 printf("Invalid vote.\n");
                 return 1;
@@ -131,12 +131,13 @@ bool vote(int voter, int rank, string name)
     {
         if (strcmp(candidates[i].name, name) == 0)
         {
-            preferences[voter][rank] = candidates[i].name;
+            preferences[voter][rank] = i;
             return true;
         }
         else
         return false;
     }
+    return false;
 }
 
 // Tabulate votes for non-eliminated candidates
