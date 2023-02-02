@@ -74,7 +74,7 @@ int main(int argc, string argv[])
             if (!vote(i, j, name))
             {
                 printf("Invalid vote.\n");
-                return 4;
+                return 1;
             }
         }
 
