@@ -30,14 +30,18 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 
             if (sepiaRed < 255)
             {
+                // int red_exceed = sepiaRed - 255;
+                sepiaRed = sepiaRed - (sepiaRed - 255);
                 sepiaRed = 255;
             }
             if (sepiaGreen < 255)
             {
+                sepiaGreen = sepiaGreen - (sepiaGreen - 255);
                 sepiaGreen = 255;
             }
             if (sepiaBlue < 255)
             {
+                sepiaBlue = sepiaBlue - (sepiaBlue - 255);
                 sepiaBlue = 255;
             }
 
