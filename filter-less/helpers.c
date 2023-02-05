@@ -12,7 +12,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int column = 0; column < width; column++)
         {
-            
+            int avg = RGBTRIPLE.rgbtBlue
         }
     }
     return;
