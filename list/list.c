@@ -14,8 +14,18 @@ int main(void)
     list[1] = 2;
     list[2] = 3;
 
+    // Time passes
+
+    int *tmp = malloc(4 * sizeof(int));
+    if (tmp == NULL)
+    {
+        free(tmp);
+        return 1;
+    }
+
     for (int i = 0; i < 3; i++)
     {
-        printf("%i\n", list[i]);
+        tmp[i] = list[i];
     }
+    tmp[3] = 4;
 }
