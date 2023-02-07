@@ -34,6 +34,7 @@ int main(void)
 
     // Update the list to point to new node
     list = n;
+    free (n);
 
     // Add a number to the list
     n = malloc(sizeof(node));
@@ -47,6 +48,7 @@ int main(void)
     n->next = NULL;
 
     list->next = n;
+    free (n);
 
     // Add a number to the list
     n = malloc(sizeof(node));
@@ -61,4 +63,6 @@ int main(void)
     n->next = NULL;
 
     list->next->next = n;
+    free (n);
+    free (list);
 }
