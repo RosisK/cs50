@@ -63,6 +63,13 @@ int main(void)
     n->next = NULL;
 
     list->next->next = n;
+
+    // Print the numbers
+    for (node *tmp = list; tmp != NULL; tmp = tmp->next)
+    {
+        printf("%i\n", tmp->number);
+    }
+
     free (n);
     free (list);
 }
