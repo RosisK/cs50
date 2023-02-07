@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <cs50.h>
 #include <stdlib.h>
 
 int main(void)
@@ -7,6 +6,7 @@ int main(void)
     int *list = malloc(3 * sizeof(int));
     if (list == NULL)
     {
+        free (list);
         return 1;
     }
 
@@ -28,4 +28,12 @@ int main(void)
         tmp[i] = list[i];
     }
     tmp[3] = 4;
+
+    list = tmp;
+
+    for (int i = 0; i < 4; i++)
+    {
+        printf("%i\n", list[i]);
+    }
+    return 0;
 }
