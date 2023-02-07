@@ -51,5 +51,18 @@ int main(void)
 
     list-> = n;
 
-    pr
+    // Add a number to the list
+    n = malloc(sizeof(node));
+    if (n == NULL)
+    {
+        free (list->next);
+        free (list);
+        return 1;
+    }
+
+    n->number = 3;
+    n->next = NULL;
+    free (n);
+
+    list->next->next = n;
 }
