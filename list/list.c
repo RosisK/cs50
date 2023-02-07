@@ -17,7 +17,6 @@ int main(void)
     node *n = malloc(sizeof(node));
     if (n == NULL)
     {
-        free (n);
         return 1;
     }
 
@@ -32,7 +31,6 @@ int main(void)
     This just says to go to to the number field of n */
     n->number = 1;
     n->next = NULL;
-    free (n);
 
     // Update the list to point to new node
     list = n;
@@ -47,9 +45,8 @@ int main(void)
 
     n->number = 2;
     n->next = NULL;
-    free (n);
 
-    list-> = n;
+    list->next = n;
 
     // Add a number to the list
     n = malloc(sizeof(node));
@@ -62,7 +59,6 @@ int main(void)
 
     n->number = 3;
     n->next = NULL;
-    free (n);
 
     list->next->next = n;
 }
