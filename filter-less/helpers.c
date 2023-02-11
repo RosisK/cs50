@@ -4,14 +4,14 @@
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
-    for (int row = 0; row < height; row++)
+    for (int i = 0; i < height; i++)
     {
-        for (int column = 0; column < width; column++)
+        for (int j = 0; j < width; j++)
         {
-            int avg = round((image[row][column].rgbtRed + image[row][column].rgbtGreen + image[row][column].rgbtBlue) / 3);
-            image[row][column].rgbtRed = avg;
-            image[row][column].rgbtGreen = avg;
-            image[row][column].rgbtBlue = avg;
+            int avg = round((image[i][j].rgbtRed + image[i][j].rgbtGreen + image[i][j].rgbtBlue) / 3);
+            image[i][j].rgbtRed = avg;
+            image[i][j].rgbtGreen = avg;
+            image[i][j].rgbtBlue = avg;
         }
     }
     return;
@@ -20,17 +20,17 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 // Convert image to sepia
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
-    for (int row = 0; row < height; row++)
+    for (int i = 0; i < height; i++)
     {
-        for (int column = 0; column < width; column++)
+        for (int j = 0; j < width; j++)
         {
-            int sepiaRed = round(.393 * image[row][column].rgbtRed + .769 * image[row][column].rgbtGreen + .189 * image[row][column].rgbtBlue);
-            int sepiaGreen = round(.349 * image[row][column].rgbtRed + .686 * image[row][column].rgbtGreen + .168 * image[row][column].rgbtBlue);
-            int sepiaBlue = round(.272 * image[row][column].rgbtRed + .534 * image[row][column].rgbtGreen + .131 * image[row][column].rgbtBlue);
+            int sepiaRed = round(.393 * image[i][j].rgbtRed + .769 * image[i][j].rgbtGreen + .189 * image[i][j].rgbtBlue);
+            int sepiaGreen = round(.349 * image[i][j].rgbtRed + .686 * image[i][j].rgbtGreen + .168 * image[i][j].rgbtBlue);
+            int sepiaBlue = round(.272 * image[i][j].rgbtRed + .534 * image[i][j].rgbtGreen + .131 * image[i][j].rgbtBlue);
 
-            image[row][column].rgbtRed = sepiaRed;
-            image[row][column].rgbtGreen = sepiaGreen;
-            image[row][column].rgbtBlue = sepiaBlue;
+            image[i][j].rgbtRed = sepiaRed;
+            image[i][j].rgbtGreen = sepiaGreen;
+            image[i][j].rgbtBlue = sepiaBlue;
         }
     }
     return;
@@ -39,13 +39,13 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 // Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
-    for (int row = 0; row < height; row++)
+    for (int i = 0; i < height; i++)
     {
-        for (int column = 0, k = width; column < k; column++, k--)
+        for (int j = 0, k = width; j < k; j++, k--)
         {
-            RGBTRIPLE temp = image[row][column];
-            image[row][column] = image[row][k];
-            image[row][k] = temp;
+            RGBTRIPLE temp = image[i][j];
+            image[i][j] = image[i][k];
+            image[i][k] = temp;
         }
     }
     return;
@@ -54,5 +54,18 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    return;
+    RGBTRIPLE temp[height][width];
+
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            int sumRed = 0;
+            int sumGreen = 0;
+            int sumBlue = 0;
+            int count = 0;
+
+            for (int ii = )
+        }
+    }
 }
