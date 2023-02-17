@@ -63,14 +63,44 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             int sumRed = 0;
             int sumGreen = 0;
             int sumBlue = 0;
-            int count = 0;
+            int counter = 0;
 
+            // For neighbouring pixels
             for (int x = -1; x <= 1; x++)
             {
                 for (int y = -1; y <= 1; y++)
                 {
-                    
+                    int currentX = i + x;
+                    int currentY = j + y;
+
+                    // Check if neighbouring pixels are valid
+                    if (currentX < 0 ||currentX > (height - 1) || currentY < 0 || currentY > (width - 1))
+                    {
+                        continue;
+                    }
+
+                    // Get image value
+                    sumRed = sumRed + image[currentX][currentY].rgbtRed;
+                    sumGreen = sumGreen + image[currentX][currentY].rgbtGreen;
+                    sumBlue = sumBlue + image[currentX][currentY].rgbtBlue;
+
+                    counter++;
+
+                    // Calculate average of neighbouring pixels
+                    temp[i][j].rgbtRed = round(sumRed / counter);
+                    temp[i][j].rgbtGreen = round(sumGreen / counter);
+                    temp[i][j].rgbtBlue = round(sumBlue / counter);
                 }
+            }
+        }
+        // Copy new pixels into original image
+        for (int i = 0; i < height; i++)
+        {
+            for (int j = 0; i < width; j++)
+            {
+                image[i][j].rgbtRed = temp[i][j].rgbtRed;
+                image[i][j].rgbtGreen = temp[i][j].rgbtGreen;
+                image[i][j].rgbtBlue = temp[i][j].rgbtBlue;
             }
         }
     }
