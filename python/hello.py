@@ -1,2 +1,4 @@
-name = input("What's your name?\n")
-print("Hello "+ name)
+x = int(input("x: "))
+y = int(input("y: "))
+
+print(f"Answer: {x + y}")
