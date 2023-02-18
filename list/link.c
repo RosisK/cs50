@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 // Define node as a data type
 typedef struct node
@@ -41,8 +42,8 @@ int main(void)
     n = malloc(sizeof(node));
     if (n == NULL)
     {
-        free(list->next);
         free(list);
+        free(list->next);
         return 1;
     }
 }
