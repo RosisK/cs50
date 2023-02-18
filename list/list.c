@@ -1,75 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-typedef struct node
-{
-    int number;
-    struct node *next;
-}
-node;
 
 int main(void)
 {
-    // List of size zero
-    node *list = NULL;
+    int list[3];
 
-    // Add a number to the list
-    node *n = malloc(sizeof(node));
-    if (n == NULL)
+    list[0] = 1;
+    list[1] = 2;
+    list[2] = 3;
+
+    for (int i = 0; i < 3; i++)
     {
-        return 1;
+        printf("%i\n", list[i]);;
     }
-
-    /*In order to access a field inside a node struct, we use syntax like this
-        *(n).number = 1;
-    What this is saying is
-        Go to the pointer(dereferencing) and access the number field
-
-    Since the syntax is a little cryptic and hard to understand, syntactic sugar is used like
-        n->number
-
-    This just says to go to to the number field of n */
-    n->number = 1;
-    n->next = NULL;
-
-    // Update the list to point to new node
-    list = n;
-    free (n);
-
-    // Add a number to the list
-    n = malloc(sizeof(node));
-    if (n == NULL)
-    {
-        free (list);
-        return 1;
-    }
-
-    n->number = 2;
-    n->next = NULL;
-
-    list->next = n;
-    free (n);
-
-    // Add a number to the list
-    n = malloc(sizeof(node));
-    if (n == NULL)
-    {
-        free (list->next);
-        free (list);
-        return 1;
-    }
-
-    n->number = 3;
-    n->next = NULL;
-
-    list->next->next = n;
-
-    // Print the numbers
-    for (node *tmp = list; tmp != NULL; tmp = tmp->next)
-    {
-        printf("%i\n", tmp->number);
-    }
-
-    free (n);
-    free (list);
+    return 0;
 }
