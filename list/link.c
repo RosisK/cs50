@@ -36,6 +36,7 @@ int main(void)
     }
     n->number = 2;
     n->next = NULL;
+    // Update list to point to new node
     list->next = n;
 
     // Add a number to list
@@ -46,4 +47,13 @@ int main(void)
         free(list->next);
         return 1;
     }
+
+    n->number = 3;
+    n->next = NULL;
+    // Update list to point to new node
+    list->next->next = n;
+
+    free(list);
+    free(list->next);
+    free(list->next->next);
 }
