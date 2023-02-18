@@ -27,7 +27,8 @@ int main(void)
     }
     tmp[3] = 4;
 
-    free(tmp);
+    free(list);
+    
     list = tmp;
 
 
