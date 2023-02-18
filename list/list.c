@@ -24,12 +24,9 @@ int main(void)
         free(list);
         return 1;
     }
-    
+
     // Add fourth number to new array
     tmp[3] = 4;
-
-    // Free old array
-    free(list);
 
     // Remember new array
     list = tmp;
