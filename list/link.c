@@ -41,6 +41,7 @@ int main(void)
     n = malloc(sizeof(node));
     if (n == NULL)
     {
+        free(list->next);
         free(list);
         return 1;
     }
