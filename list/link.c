@@ -43,8 +43,8 @@ int main(void)
     n = malloc(sizeof(node));
     if (n == NULL)
     {
-        free(list);
         free(list->next);
+        free(list);
         return 1;
     }
 
@@ -53,7 +53,7 @@ int main(void)
     // Update list to point to new node
     list->next->next = n;
 
-    free(list);
-    free(list->next);
     free(list->next->next);
+    free(list->next);
+    free(list);
 }
