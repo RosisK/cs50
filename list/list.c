@@ -12,8 +12,13 @@ int main(void)
     list[1] = 2;
     list[2] = 3;
 
-    for (int i = 0; i < 3; i++)
+    // Time passes
+
+    list = malloc(4 * sizeof(int));
+    list[3] = 4;
+
+    for (int i = 0; i < 4; i++)
     {
-        printf("%s\n", list[i]);
+        printf("%i\n", list[i]);
     }
 }
