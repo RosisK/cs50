@@ -33,8 +33,9 @@ int main(void)
         free(list);
         return 1;
     }
-    n->next->number = 2;
-    n->next->next = NULL;
+    n->number = 2;
+    n->next = NULL;
+    list->next = n;
 
     // Update list to point to new node
     list = n;
