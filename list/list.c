@@ -27,9 +27,9 @@ int main(void)
     }
     tmp[3] = 4;
 
+    free(tmp);
     list = tmp;
 
-    free(tmp);
 
     for (int i = 0; i < 4; i++)
     {
