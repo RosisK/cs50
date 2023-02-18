@@ -1,4 +1,4 @@
 x = int(input("x: "))
 y = int(input("y: "))
 
-print(f"Answer: {x + y}")
+print(f"Answer: " + x + y)
