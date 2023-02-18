@@ -53,7 +53,9 @@ int main(void)
     // Update list to point to new node
     list->next->next = n;
 
-    free(list->next->next);
-    free(list->next);
-    free(list);
+    // Printing the list
+    for (node *tmp = list; tmp != NULL; tmp->next)
+    {
+        printf("%i\n", tmp->number);
+    }
 }
