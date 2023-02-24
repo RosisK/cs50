@@ -63,28 +63,19 @@ void encipher(string plain, string key)
         if (isupper(plain[i]))
         {
             int index = plain[i] - 65;
-
-            for (int j = 0; j < strlen(plain); j++)
-            {
-                if (index == j)
-                {
-                    cipher[i] = key[i];
-                }
-            }
+            cipher[i] = toupper(key[index]);
         }
         else if (islower(plain[i]))
         {
             int index = plain[i] - 97;
-
-            for (int j = 0; j < i; j++)
-            {
-                if (index == j)
-                {
-                    cipher[i] = key[i];
-                }
-            }
+            cipher[i] = tolower(key[index]);
+        }
+        else
+        {
+            cipher[i] = plain[i];
         }
     }
+
     printf("ciphertext: %s\n", cipher);
     free(cipher);
 }
