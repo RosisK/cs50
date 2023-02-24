@@ -56,14 +56,14 @@ int main(int argc, string argv[])
 void encipher(string plain, string key)
 {
     string cipher = malloc(26 * sizeof(char));
-    
+
     for (int i = 0; i < strlen(plain); i++)
     {
         if (isupper(plain[i]))
         {
             plain[i] = plain[i] - 65;
 
-            for (int j = 0; j < i; j++)
+            for (int j = 0; j < strlen(plain); j++)
             {
                 if ((int) plain[i] == j)
                 {
