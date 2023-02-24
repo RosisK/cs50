@@ -20,7 +20,7 @@ int main(int argc, string argv[])
     // Make sure the key has exactly 26 characters
     if (strlen(key) != 26)
     {
-        printf("Usage: ./substitution [key]\nKey should contain 26 letters\n");
+        printf("Usage: ./substitution [key]\nKey should contain 26 characters\n");
         return 1;
     }
 
@@ -29,7 +29,7 @@ int main(int argc, string argv[])
         // Make sure the key is entirely a string
         if (isdigit(key[i]) != 0)
         {
-            printf("Usage: ./substitution [key]\nKey should be a string\n");
+            printf("Usage: ./substitution [key]\nKey contain only alphabetic characters\n");
             return 1;
         }
 
@@ -38,7 +38,7 @@ int main(int argc, string argv[])
         {
             if (key[i] == key[j])
             {
-                printf("Usage: ./substitution[key]\nKey should not have repeated letters\n");
+                printf("Usage: ./substitution[key]\nKey should not contain repeated characters\n");
                 return 1;
             }
         }
@@ -47,6 +47,6 @@ int main(int argc, string argv[])
     // Prompt user to type plaintext
     string plain = get_string("plaintext: ");
 
-    
+
 }
 
