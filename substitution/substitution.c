@@ -12,6 +12,12 @@ int main(int argc, string argv[])
     }
     string key = argv[1];
 
+    if (strlen(key) != 26)
+    {
+        printf("Usage: ./substitution [key]\nKey should contain 26 letters\n");
+        return 1;
+    }
+
     for (int i = 0; i < strlen(key); i++)
     {
         if (isdigit(key[i]) != 0)
@@ -19,10 +25,13 @@ int main(int argc, string argv[])
             printf("Usage: ./substitution [key]\nKey should be a string\n");
             return 1;
         }
-    }
-    if (strlen(key) != 26)
-    {
-        printf("Usage: ./substitution [key]\nKey should contain 26 letters\n");
-        return 1;
+        for (int j = 0; j < strlen(key); j++)
+        {
+            if (key[i] == key[j])
+            {
+                printf("Usage: ./substitution[key]\nKey should not have repeated letters\n");
+                return 1;
+            }
+        }
     }
 }
