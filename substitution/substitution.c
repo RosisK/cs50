@@ -65,7 +65,7 @@ void encipher(string plain, string key)
             {
                 if ((int) plain[i] == j)
                 {
-                    cipher[i] = key[i];
+                    cipher[i] = key[j];
                 }
             }
         }
@@ -77,7 +77,7 @@ void encipher(string plain, string key)
             {
                 if ((int) plain[i] == j)
                 {
-                    cipher[i] = key[i];
+                    cipher[i] = key[j];
                 }
             }
         }
