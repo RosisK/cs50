@@ -3,6 +3,8 @@
 #include <string.h>
 #include <ctype.h>
 
+void encipher(string plain, string key);
+
 int main(int argc, string argv[])
 {
     // Check for invalid usage
@@ -47,6 +49,10 @@ int main(int argc, string argv[])
     // Prompt user to type plaintext
     string plain = get_string("plaintext: ");
 
-
+    encipher(plain, key);
 }
 
+void encipher(string plain, string key)
+{
+    
+}
