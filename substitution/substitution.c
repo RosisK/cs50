@@ -59,6 +59,11 @@ void encipher(string plain, string key)
         if (isupper(plain[i]))
         {
             char temp = plain[i] - 65;
+
+            for (int j = 0; j < i; j++)
+            {
+                
+            }
         }
     }
 }
