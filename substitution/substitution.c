@@ -67,6 +67,7 @@ void encipher(string plain, string key)
             {
                 if ((int) plain[i] == j)
                 {
+                    printf("%i\n", plain[i]);
                     cipher[i] = key[i];
                 }
             }
@@ -83,7 +84,6 @@ void encipher(string plain, string key)
                 }
             }
         }
-        printf("ciphertext: %c", cipher[i]);
     }
     printf("ciphertext: %s\n", cipher);
     free(cipher);
