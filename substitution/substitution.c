@@ -36,7 +36,7 @@ int main(int argc, string argv[])
         }
 
         // Make sure the characters in the key aren't repeated
-        for (int j = 0; j < i j++)
+        for (int j = 0; j < i; j++)
         {
             if (key[i] == key[j])
             {
