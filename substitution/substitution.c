@@ -54,5 +54,11 @@ int main(int argc, string argv[])
 
 void encipher(string plain, string key)
 {
-    
+    for (int i = 0; i < strlen(plain); i++)
+    {
+        if (isupper(plain[i]))
+        {
+            char temp = plain[i] - 65;
+        }
+    }
 }
