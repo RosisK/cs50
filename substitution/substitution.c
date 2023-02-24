@@ -27,7 +27,7 @@ int main(int argc, string argv[])
         }
         for (int j = 0; j < strlen(key); j++)
         {
-            if (key[i] == key[j])
+            if (key[i] == key[j + 1])
             {
                 printf("Usage: ./substitution[key]\nKey should not have repeated letters\n");
                 return 1;
