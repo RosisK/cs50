@@ -2,6 +2,7 @@
 #include <cs50.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 void encipher(string plain, string key);
 
@@ -54,7 +55,7 @@ int main(int argc, string argv[])
 
 void encipher(string plain, string key)
 {
-    string cipher;
+    string cipher = malloc(26 * sizeof(char));
     for (int i = 0; i < strlen(plain); i++)
     {
         if (isupper(plain[i]))
@@ -82,4 +83,6 @@ void encipher(string plain, string key)
             }
         }
     }
+    printf("ciphertext: %s\n", cipher);
+    free(cipher);
 }
