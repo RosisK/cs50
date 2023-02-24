@@ -56,6 +56,7 @@ int main(int argc, string argv[])
 void encipher(string plain, string key)
 {
     string cipher = malloc(26 * sizeof(char));
+    
     for (int i = 0; i < strlen(plain); i++)
     {
         if (isupper(plain[i]))
