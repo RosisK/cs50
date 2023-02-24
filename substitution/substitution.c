@@ -25,7 +25,7 @@ int main(int argc, string argv[])
             printf("Usage: ./substitution [key]\nKey should be a string\n");
             return 1;
         }
-        for (int j = i + 1; j < strlen(key); j++)
+        for (int j = 0; j < i j++)
         {
             if (key[i] == key[j])
             {
