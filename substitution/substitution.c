@@ -54,15 +54,31 @@ int main(int argc, string argv[])
 
 void encipher(string plain, string key)
 {
+    string cipher;
     for (int i = 0; i < strlen(plain); i++)
     {
         if (isupper(plain[i]))
         {
-            char temp = plain[i] - 65;
+            plain[i] = plain[i] - 65;
 
             for (int j = 0; j < i; j++)
             {
-                
+                if ((int) plain[i] == j)
+                {
+                    cipher[i] = key[i];
+                }
+            }
+        }
+        else if (islower(plain[i]))
+        {
+            plain[i] = plain[i] - 97;
+
+            for (int j = 0; j < i; j++)
+            {
+                if ((int) plain[i] == j)
+                {
+                    cipher[i] = key[i];
+                }
             }
         }
     }
